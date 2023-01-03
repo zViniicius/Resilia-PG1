@@ -1,0 +1,10 @@
+{
+  "01": 
+  {
+    "descricao": "Garrafa Térmica Personalizada",
+    "valor": "R$49,90",
+    "img": "/assets/img/produtos/garrafa-termica-inox.jpg",
+    "categoria": "Garrafas",
+    "desconto": "10%"
+  }
+}
