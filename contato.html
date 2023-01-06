@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AustBurguer</title>
-</head>
-<body>
-    <header></header>
+ <head>
+   <meta charset="UTF-8"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>AustBurguer</title>
+   <link rel="icon" href="/assets/img/logo.png"> 
+   <link rel="stylesheet" href="./assets/css/style.css"/>
+   <script
+    src="https://kit.fontawesome.com/03a0322255.js"
+    crossorigin="anonymous"
+   ></script>
+ </head>
+ <body>
+   <header>
+    <div class="container flex-row">
+        <a href="/index.html"> <div class="logo"></div></a>
+        <ul id="itensMenu" class="flex-row">
+          <li><a href="/index.html" id="homeLink" class="active">Home</a></li>
+          <li>
+            <a href="/cardapio.html" id="cardapioLink" class="">Cardápio</a>
+          </li>
+          <li><a href="/sobre.html" id="sobreLink" class="">Sobre</a></li>
+          <li><a href="/contato.html" id="contatoLink" class="">Contato</a></li>
+        </ul>
+      </div>
+   </header>
     <main>
         <div class="conteiner">
             <div id="number">
@@ -42,6 +60,44 @@
                         <button type="submit">Enviar</button>
                       </div>
     </main>
-    <footer></footer>
-</body>
-</html>
+    <footer><div class="container flex-row">
+        <!-- DIV contatos -->
+        <div class="contato flex-row">
+          <!-- DIV Contatos > Endereço -->
+          <div id="endereco">
+            <h3><i class="fa-sharp fa-solid fa-location-dot"></i></h3>
+            <p>Rua Santa Maria, 243</p>
+            <p>Butantã - São Paulo</p>
+          </div>
+
+          <!-- DIV Contatos > Telefone -->
+          <div id="telefone">
+            <h3><i class="fa-solid fa-phone-volume"></i></h3>
+            <p>(11) 94456-8394</p>
+          </div>
+        </div>
+
+        <!-- DIV Logo -->
+        <a href="/index.html">
+          <span id="copyright">AustBurger © 2023</span>
+          <div class="logo flex-column"></div
+        ></a>
+
+        <!-- DIV Redes Sociais -->
+        <ul id="itensSocial" class="flex-row">
+          <li>
+            <a href="" id="1"><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+          <li>
+            <a href="" id="2"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="" id="3"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+ </body>
+
+ </html>
