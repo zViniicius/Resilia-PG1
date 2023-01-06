@@ -162,8 +162,11 @@ footer > .container {
 /* Propriedades o DIV ItensSocial */
 #itensSocial {
   width: 33%;
+}
+
   font-size: clamp(1em, 1.5em + 1vw, 2em);
   height: 1rem;
+  width: 30%;
   align-items: center;
   justify-content: flex-end;
 }
