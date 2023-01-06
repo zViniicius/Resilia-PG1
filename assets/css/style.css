@@ -106,7 +106,7 @@ header > .container .logo {
 footer {
   position: absolute;
   bottom: 0;
-  width: -webkit-fill-available;
+  width: 100%;
 }
 footer > .container {
   width: 100%;
@@ -142,6 +142,7 @@ footer > .container {
   justify-content: center;
   font-family: var(--font-corpo);
   color: var(--font-color);
+  
 }
 
 .text h1 {
@@ -151,13 +152,18 @@ footer > .container {
   margin: 0 auto;
 }
 
-.text p {
-  width: 100%
-} 
-
 .paragrafos {
-  font-size: 1.3em;
+  font-size: 1.5em;
+ 
+  margin-bottom: 30px;
 }
+
+/* Segunda parte Quem Somos - Equipe */
+
+main > .container {
+  width: 50%;
+}
+
 
 
 /* Propriedades o DIV ItensSocial */
