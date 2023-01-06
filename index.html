@@ -1,83 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AustBurguer</title>
-    <link rel="icon" href="/assets/img/logo.png"> 
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Home - AustBurguer</title>
+    <link rel="icon" href="/assets/img/logo.png" />
+
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/corpo.css" />
+    <link rel="stylesheet" href="./assets/css/rodape.css" />
     <script
       src="https://kit.fontawesome.com/03a0322255.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <header>
-      <div class="container flex-row">
-        <a href="/index.html"> <div class="logo"></div></a>
-        <ul id="itensMenu" class="flex-row">
-          <li><a href="/index.html" id="homeLink" class="active">Home</a></li>
-          <li>
-            <a href="/cardapio.html" id="cardapioLink" class="">Cardápio</a>
-          </li>
-          <li><a href="/sobre.html" id="sobreLink" class="">Sobre</a></li>
-          <li><a href="/contato.html" id="contatoLink" class="">Contato</a></li>
-        </ul>
+      <div class="menu flex-row">
+        <div class="logo"></div>
+        <div class="linksMenu flex-row">
+          <li class="links active" id="link1"><a href="">Inicio</a></li>
+          <li class="links" id="link2"><a href="">Cardápio</a></li>
+          <li class="links" id="link3"><a href="">Sobre</a></li>
+          <li class="links" id="link4"><a href="">Contato</a></li>
+        </div>
       </div>
     </header>
     <main>
-      <div class="container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eos
-        veritatis nihil sit quam excepturi reprehenderit eligendi, natus rerum
-        facilis ad assumenda consequuntur aliquam ut accusantium minima quas
-        ullam deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Beatae eos veritatis nihil sit quam excepturi reprehenderit eligendi,
-        natus rerum facilis ad assumenda consequuntur aliquam ut accusantium
-        minima quas ullam deleniti! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Beatae eos veritatis nihil sit quam excepturi
-        reprehenderit eligendi, natus rerum facilis ad assumenda consequuntur
-        aliquam ut accusantium minima quas ullam deleniti!<br />Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Beatae eos veritatis nihil
-        sit quam excepturi reprehenderit eligendi, natus rerum facilis ad
-        assumenda consequuntur aliquam ut accusantium minima quas ullam
-        deleniti!<br />
+      <div class="corpo">
+        <h1>QUEM SOMOS?</h1>
+        <p>
+          A AustBurguer é uma hamburgueria artesanal fundada em 2022 com o
+          objetivo de oferecer aos nossos clientes hambúrgueres feitos com
+          ingredientes de alta qualidade e preparados com muito carinho. Nós
+          acreditamos que um bom hambúrguer vai além de carne e pão, é uma
+          experiência completa que inclui o ambiente, o atendimento e, claro, o
+          sabor. <br /><br />Nosso cardápio é composto por uma seleção cuidadosa
+          de opções de hambúrgueres, acompanhamentos e bebidas, incluindo opções
+          vegetarianas e veganas. Além disso, trabalhamos com fornecedores
+          locais e orgânicos sempre que possível para garantir a frescura e
+          qualidade de nossos ingredientes. &#013;Acreditamos que a satisfação
+          dos nossos clientes é a nossa principal prioridade e estamos sempre
+          procurando maneiras de melhorar a experiência deles em nossa
+          hamburgueria. &#013;Seja você um amante de hambúrgueres de longa data
+          ou está procurando por uma refeição deliciosa e descontraída, a
+          AustBurguer é o lugar perfeito para você. Nós esperamos vê-lo em
+          breve!
+        </p>
       </div>
     </main>
     <footer>
-      <div class="container flex-row">
-        <!-- DIV contatos -->
-        <div id="contato" class="flex-row">
-          <!-- DIV Contatos > Endereço -->
-          <div id="endereco">
-            <h3><i class="fa-sharp fa-solid fa-location-dot"></i></h3>
-            <p>Rua Santa Maria, 243</p>
-          </div>
-
-          <!-- DIV Contatos > Telefone -->
-          <div id="telefone">
-            <h3><i class="fa-solid fa-phone-volume"></i></h3>
-            <p>(11) 94456-8394</p>
-          </div>
+      <div class="rodape flex-row">
+        <div class="contato">
+          <span><i class="fa-sharp fa-solid fa-location-dot"></i>
+          Rua Santa Maria, 243</span>
+          <span></span><i class="fa-solid fa-phone-volume"></i>
+          (11) 99999-9999</span>
         </div>
-
-        <!-- DIV Logo -->
-        <div id="copyright" class="flex-column">
-          <img src="./assets/img/logo.png" width="64px" alt="Logo AustBurger" />
-          <p>Copyright © 2023 AustBurger Inc</p>
+        <div class="copyright">
+          <p>Copyright © <span id="copyAno">2023</span> AustBurger Inc</p>
+          <span>Todos os direitos reservados</span>
         </div>
-        <!-- DIV Redes Sociais -->
-        <ul id="itensSocial" class="flex-row">
-          <li>
-            <a href="" id="1"><i class="fa-brands fa-whatsapp"></i></a>
-          </li>
-          <li>
-            <a href="" id="2"><i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="" id="3"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-        </ul>
+        <div class="redesSociais">
+          <span class="facebook"
+            ><a href="" id="2"><i class="fa-brands fa-facebook"></i></a
+          ></span>
+          <span class="instagram"
+            ><a href="" id="1"><i class="fa-brands fa-instagram"></i></a
+          ></span>
+          <span class="whatsapp"
+            ><a href="" id="1"><i class="fa-brands fa-whatsapp"></i></a
+          ></span>
+        </div>
       </div>
     </footer>
   </body>
