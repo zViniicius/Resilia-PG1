@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - AustBurguer</title>
+    <link rel="icon" href="/assets/img/logo.png" />
+
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/corpo.css" />
+    <link rel="stylesheet" href="./assets/css/rodape.css" />
+    <script
+      src="https://kit.fontawesome.com/03a0322255.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+ <body>
+  <header>
+      <div class="menu flex-row">
+        <div class="logo"></div>
+        <div class="linksMenu flex-row">
+          <li class="links " id="link1"><a href="/index.html">Inicio</a></li>
+          <li class="links" id="link2"><a href="/cardapio.html">Cardápio</a></li>
+          <li class="links" id="link3"><a href="/sobre.html">Sobre</a></li>
+          <li class="links active" id="link4"><a href="/contato.html">Contato</a></li>
+        </div>
+      </div>
+    </header>
+    <main>
+        <div class="corpo">
+            <div id="number">
+                <img src="/assets/img/icon-contato/Group.png">
+                <h3> TERÇA - DOMINGO: 11H ÀS 22H </h3>  
+                <img src="/assets/img/icon-contato/Vector.png">               
+                <h3>(11)96700-8890</h3>
+                <h3>(11)94002-8922</h3>
+            </div>
+
+            <div class="iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.975973525524!2d-46.74389898606215!3d-23.569306384678953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5673bda42797%3A0xf5fe7571f40bfb35!2sAv.%20Corifeu%20de%20Azevedo%20Marques%2C%203097%20-%20Vila%20Butant%C3%A3%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005339-000!5e0!3m2!1spt-BR!2sbr!4v1672968557594!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Rua Santa Maria, 243
+                  </p>
+            </div>
+
+            <div class="formulario">
+                <form action=”/formulario-contato” method=”post”>
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="texto" id="nome" name="nome_usuario">
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email_usuario">
+                    </div>
+                    <div>
+                        <label for="texto">Mensagem</label>
+                        <textarea id="texto" name="texto_usuario"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Enviar</button>
+                      </div>
+    </main>
+     <footer>
+      <div class="rodape flex-row">
+        <div class="contato">
+          <span><i class="fa-sharp fa-solid fa-location-dot"></i>
+          Rua Santa Maria, 243</span>
+          <span></span><i class="fa-solid fa-phone-volume"></i>
+          (11) 99999-9999</span>
+        </div>
+        <div class="copyright">
+          <p>Copyright © <span id="copyAno">2023</span> AustBurger Inc</p>
+          <span>Todos os direitos reservados</span>
+        </div>
+        <div class="redesSociais">
+          <span class="facebook"
+            ><a href="" id="2"><i class="fa-brands fa-facebook"></i></a
+          ></span>
+          <span class="instagram"
+            ><a href="" id="1"><i class="fa-brands fa-instagram"></i></a
+          ></span>
+          <span class="whatsapp"
+            ><a href="" id="1"><i class="fa-brands fa-whatsapp"></i></a
+          ></span>
+        </div>
+      </div>
+    </footer>
+ </body>
+ </html>
