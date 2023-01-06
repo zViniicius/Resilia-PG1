@@ -118,7 +118,9 @@ footer > .container {
 }
 
 /* Propriedades da DIV Contatos */
-
+#contato {
+  width: 33%;
+}
 #contato > div {
   font-size: clamp(0.5em, 0.5em + 1vw, 1.5em);
   text-align: center;
@@ -128,8 +130,7 @@ footer > .container {
 /* Propriedades da DIV copyright */
 #copyright {
   font-size: clamp(0.5em, 1em + 1vw, 1em);
- 
-
+  width: 33%;
   align-items: center;
 }
 
@@ -161,6 +162,7 @@ footer > .container {
 
 /* Propriedades o DIV ItensSocial */
 #itensSocial {
+  width: 33%;
   font-size: clamp(1em, 1.5em + 1vw, 2em);
   height: 1rem;
   align-items: center;
