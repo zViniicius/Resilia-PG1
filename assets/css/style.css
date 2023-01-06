@@ -20,6 +20,7 @@ body {
   justify-content: center;
   font-family: var(--font-corpo);
   background-color: var(--bg-color-main);
+  font-size: 12px;
 }
 
 header {
@@ -88,10 +89,10 @@ header > .container .logo {
   padding: 1rem;
 }
 #itensMenu > li > a {
-  font-size: clamp(1em, 1em + 1vw, 1.5em);
+  font-size: clamp(1rem, 0.5em + 1vw, 1.5em);
   font-weight: 500;
   color: #fff;
-  padding: 5px;
+  padding: 10px;
 }
 .active,
 #itensMenu > li > a:hover {
@@ -115,34 +116,29 @@ footer > .container {
   color: white;
 }
 
-footer .container a {
-  width: 150px;
-  margin-top: 3rem;
-}
-/* Proriedades do Logo - Footer */
-footer .logo {
-  position: absolute;
-  bottom: 43px;
-  width: 150px !important;
-  height: 150px !important;
-}
-.container a #copyright {
-  top: 50px;
-  font-weight: 500;
-  color: #fff;
-}
-
 /* Propriedades da DIV Contatos */
-.contato > div {
+#contato {
+  width: 40%;
+}
+#contato > div {
+  font-size: clamp(0.5em, 0.5em + 1vw, 1.5em);
   text-align: center;
   margin: 0px 10px 0px 10px;
-  flex-wrap: wrap;
-  line-height: 0;
 }
 
-/* Propriedades o ID ItensSocial */
-#itensSocial {
-  font-size: clamp(1em, 1em + 1vw, 1.5em);
-  height: 1rem;
+/* Propriedades da DIV copyright */
+#copyright {
+  font-size: clamp(0.5em, 1em + 1vw, 1em);
+  width: 30%;
+
   align-items: center;
+}
+
+/* Propriedades o DIV ItensSocial */
+#itensSocial {
+  font-size: clamp(1em, 1.5em + 1vw, 2em);
+  height: 1rem;
+  width: 30%;
+  align-items: center;
+  justify-content: flex-end;
 }
