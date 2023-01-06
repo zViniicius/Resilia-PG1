@@ -1,0 +1,148 @@
+/* Variáveis CSS */
+:root {
+  --bg-color-main: #eee8db;
+  --bg-color-header: #600a0a;
+  --font-corpo: 'Roboto', sans-serif;
+}
+
+/* Elementos Globais */
+* {
+  list-style-type: none;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--font-corpo);
+  background-color: var(--bg-color-main);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: -webkit-fill-available;
+}
+main {
+  margin-top: 10rem;
+}
+main .container {
+  width: 80%;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Classes Globais */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Props .Container */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.logo {
+  width: 120px;
+  height: 120px;
+  background-image: url('../img/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Inicio Header */
+header > .container {
+  width: 100%;
+  background-color: var(--bg-color-header);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Propriedades do Logo - Header */
+header > .container .logo {
+  position: absolute;
+  left: 0;
+  margin-left: 1rem;
+  top: 0;
+}
+
+/* Propriedades dos Itens do Menu - Header */
+.container > #itensMenu {
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+#itensMenu,
+#itensSocial > li {
+  padding: 1rem;
+}
+#itensMenu > li > a {
+  font-size: clamp(1em, 1em + 1vw, 1.5em);
+  font-weight: 500;
+  color: #fff;
+  padding: 5px;
+}
+.active,
+#itensMenu > li > a:hover {
+  background-color: #280303;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+/* Inicio do Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: -webkit-fill-available;
+}
+footer > .container {
+  width: 100%;
+  background-color: var(--bg-color-header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+footer .container a {
+  width: 150px;
+  margin-top: 3rem;
+}
+/* Proriedades do Logo - Footer */
+footer .logo {
+  position: absolute;
+  bottom: 43px;
+  width: 150px !important;
+  height: 150px !important;
+}
+.container a #copyright {
+  top: 50px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Propriedades da DIV Contatos */
+.contato > div {
+  text-align: center;
+  margin: 0px 10px 0px 10px;
+  flex-wrap: wrap;
+  line-height: 0;
+}
+
+/* Propriedades o ID ItensSocial */
+#itensSocial {
+  font-size: clamp(1em, 1em + 1vw, 1.5em);
+  height: 1rem;
+  align-items: center;
+}
