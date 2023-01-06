@@ -148,17 +148,18 @@ footer > .container {
 
 .text h1 {
   color: #2c2c2c;
-  font-size: 2em;
+  font-size: 2.5em;
   padding: 0 auto;
   margin: 0 auto;
 }
 
 .text p {
-  width: 80%;
+  width: 100%
 } 
 
-
-
+.paragrafos {
+  font-size: 1.3em;
+}
 
 
 =======
