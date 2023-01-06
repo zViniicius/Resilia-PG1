@@ -3,6 +3,7 @@
   --bg-color-main: #eee8db;
   --bg-color-header: #600a0a;
   --font-corpo: 'Roboto', sans-serif;
+  --font-color: #600a0a;
 }
 
 /* Elementos Globais */
@@ -117,9 +118,7 @@ footer > .container {
 }
 
 /* Propriedades da DIV Contatos */
-#contato {
-  width: 40%;
-}
+
 #contato > div {
   font-size: clamp(0.5em, 0.5em + 1vw, 1.5em);
   text-align: center;
@@ -129,16 +128,37 @@ footer > .container {
 /* Propriedades da DIV copyright */
 #copyright {
   font-size: clamp(0.5em, 1em + 1vw, 1em);
-  width: 30%;
+ 
 
   align-items: center;
 }
+
+/* Primeira parte Quem Somos - Textos */
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-corpo);
+  color: var(--font-color);
+}
+
+.text h1 {
+  color: #2c2c2c;
+  font-size: 2em;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+.text p {
+  width: 80%;
+} 
+
 
 /* Propriedades o DIV ItensSocial */
 #itensSocial {
   font-size: clamp(1em, 1.5em + 1vw, 2em);
   height: 1rem;
-  width: 30%;
   align-items: center;
   justify-content: flex-end;
 }
