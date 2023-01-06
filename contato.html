@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
  <head>
-   <meta charset="UTF-8"/>
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>AustBurguer</title>
-   <link rel="icon" href="/assets/img/logo.png"> 
-   <link rel="stylesheet" href="./assets/css/style.css"/>
-   <script
-    src="https://kit.fontawesome.com/03a0322255.js"
-    crossorigin="anonymous"
-   ></script>
- </head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - AustBurguer</title>
+    <link rel="icon" href="/assets/img/logo.png" />
+
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/corpo.css" />
+    <link rel="stylesheet" href="./assets/css/rodape.css" />
+    <script
+      src="https://kit.fontawesome.com/03a0322255.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
  <body>
-   <header>
-    <div class="container flex-row">
-        <a href="/index.html"> <div class="logo"></div></a>
-        <ul id="itensMenu" class="flex-row">
-          <li><a href="/index.html" id="homeLink" >Home</a></li>
-          <li>
-            <a href="/cardapio.html" id="cardapioLink" class="">Cardápio</a>
-          </li>
-          <li><a href="/sobre.html" id="sobreLink" class="">Sobre</a></li>
-          <li><a href="/contato.html" id="contatoLink" class="active">Contato</a></li>
-        </ul>
+  <header>
+      <div class="menu flex-row">
+        <div class="logo"></div>
+        <div class="linksMenu flex-row">
+          <li class="links " id="link1"><a href="/index.html">Inicio</a></li>
+          <li class="links" id="link2"><a href="/cardapio.html">Cardápio</a></li>
+          <li class="links" id="link3"><a href="/sobre.html">Sobre</a></li>
+          <li class="links active" id="link4"><a href="/contato.html">Contato</a></li>
+        </div>
       </div>
-   </header>
+    </header>
     <main>
-        <div class="conteiner">
+        <div class="corpo">
             <div id="number">
                 <img src="/assets/img/icon-contato/Group.png">
                 <h3> TERÇA - DOMINGO: 11H ÀS 22H </h3>  
@@ -60,43 +62,30 @@
                         <button type="submit">Enviar</button>
                       </div>
     </main>
-    <footer>
-      <div class="container flex-row">
-        <!-- DIV contatos -->
-        <div id="contato" class="flex-row">
-          <!-- DIV Contatos > Endereço -->
-          <div id="endereco">
-            <h3><i class="fa-sharp fa-solid fa-location-dot"></i></h3>
-            <p>Rua Santa Maria, 243</p>
-          </div>
-
-          <!-- DIV Contatos > Telefone -->
-          <div id="telefone">
-            <h3><i class="fa-solid fa-phone-volume"></i></h3>
-            <p>(11) 94456-8394</p>
-          </div>
+     <footer>
+      <div class="rodape flex-row">
+        <div class="contato">
+          <span><i class="fa-sharp fa-solid fa-location-dot"></i>
+          Rua Santa Maria, 243</span>
+          <span></span><i class="fa-solid fa-phone-volume"></i>
+          (11) 99999-9999</span>
         </div>
-
-        <!-- DIV Logo -->
-        <div id="copyright" class="flex-column">
-          <img src="./assets/img/logo.png" width="64px" alt="Logo AustBurger" />
-          <p>Copyright © 2023 AustBurger Inc</p>
+        <div class="copyright">
+          <p>Copyright © <span id="copyAno">2023</span> AustBurger Inc</p>
+          <span>Todos os direitos reservados</span>
         </div>
-        <!-- DIV Redes Sociais -->
-        <ul id="itensSocial" class="flex-row">
-          <li>
-            <a href="" id="1"><i class="fa-brands fa-whatsapp"></i></a>
-          </li>
-          <li>
-            <a href="" id="2"><i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="" id="3"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-        </ul>
+        <div class="redesSociais">
+          <span class="facebook"
+            ><a href="" id="2"><i class="fa-brands fa-facebook"></i></a
+          ></span>
+          <span class="instagram"
+            ><a href="" id="1"><i class="fa-brands fa-instagram"></i></a
+          ></span>
+          <span class="whatsapp"
+            ><a href="" id="1"><i class="fa-brands fa-whatsapp"></i></a
+          ></span>
+        </div>
       </div>
     </footer>
-
  </body>
-
  </html>
