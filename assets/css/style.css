@@ -154,16 +154,11 @@ footer > .container {
   width: 100%
 } 
 
-<<<<<<< HEAD
 .paragrafos {
   font-size: 1.3em;
 }
 
 
-=======
-=======
-
->>>>>>> 3ec016d21c8cb790a0e1fbf843db1b45b636f002
 /* Propriedades o DIV ItensSocial */
 #itensSocial {
   font-size: clamp(1em, 1.5em + 1vw, 2em);
