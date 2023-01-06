@@ -20,14 +20,13 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   font-family: var(--font-corpo);
   background-color: var(--bg-color-main);
   font-size: 12px;
 }
 
 header {
-  position: absolute;
+  position: relative;
   top: 0;
   width: -webkit-fill-available;
 }
@@ -142,7 +141,6 @@ footer > .container {
   justify-content: center;
   font-family: var(--font-corpo);
   color: var(--font-color);
-  
 }
 
 .text h1 {
@@ -164,7 +162,7 @@ footer > .container {
 /* Segunda parte Quem Somos - Equipe */
 
 main > .container {
-  width: 50%;
+  width: 100%;
 }
 
 
