@@ -32,9 +32,13 @@ header {
   width: -webkit-fill-available;
 }
 main {
+  text-align: center;
 }
 main .container {
-  width: 80%;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+ 
 }
 a {
   text-decoration: none;
@@ -162,11 +166,53 @@ footer > .container {
 /* Propriedades o DIV ItensSocial */
 #itensSocial {
   width: 33%;
-}
-
   font-size: clamp(1em, 1.5em + 1vw, 2em);
   height: 1rem;
   width: 30%;
   align-items: center;
   justify-content: flex-end;
+}
+
+
+/* Texto central home */
+.text{
+  flex-direction: column;
+  justify-content: center;
+  color:black;
+}
+
+main > .container{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  line-height: 110%;
+  font-size: 20px;
+
+}
+.title{
+  font-family: 'Holtwood One SC', serif;
+  font-size: 50px;
+  font-weight:bold;
+  line-height: 80%;
+}
+
+
+.sub{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+main > .container .icon{
+  width: 30px;
+  height: 30px;
+}
+
+main > .container a{
+  height: 50px;
+  width: 60%;
+  padding-top: 5%;
+  background-color: #600a0a;
+  border-radius: 5px;
+    
 }
