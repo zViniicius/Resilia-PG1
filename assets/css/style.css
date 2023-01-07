@@ -3,18 +3,21 @@
   --bg-color-main: #eee8db;
   --bg-color-header: #600a0a;
   --font-corpo: 'Roboto', sans-serif;
+  --font-color: #600a0a;
 }
 
 /* Elementos Globais */
 * {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 html,
 body {
-  scroll-behavior: smooth;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,10 +32,13 @@ header {
   width: -webkit-fill-available;
 }
 main {
-  margin-top: 10rem;
+  text-align: center;
 }
 main .container {
-  width: 80%;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+ 
 }
 a {
   text-decoration: none;
@@ -52,7 +58,6 @@ a {
 /* Props .Container */
 .container {
   width: 100%;
-  margin: 0 auto;
 }
 .logo {
   width: 120px;
@@ -118,7 +123,7 @@ footer > .container {
 
 /* Propriedades da DIV Contatos */
 #contato {
-  width: 40%;
+  width: 33%;
 }
 #contato > div {
   font-size: clamp(0.5em, 0.5em + 1vw, 1.5em);
@@ -129,16 +134,85 @@ footer > .container {
 /* Propriedades da DIV copyright */
 #copyright {
   font-size: clamp(0.5em, 1em + 1vw, 1em);
-  width: 30%;
-
+  width: 33%;
   align-items: center;
+}
+
+/* Primeira parte Quem Somos - Textos */
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-corpo);
+  color: var(--font-color);
+}
+
+.text h1 {
+  color: #2c2c2c;
+  font-size: 2.5em;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+.text p {
+  width: 100%;
+}
+
+.paragrafos {
+  font-size: 1.3em;
 }
 
 /* Propriedades o DIV ItensSocial */
 #itensSocial {
+  width: 33%;
   font-size: clamp(1em, 1.5em + 1vw, 2em);
   height: 1rem;
   width: 30%;
   align-items: center;
   justify-content: flex-end;
+}
+
+
+/* Texto central home */
+.text{
+  flex-direction: column;
+  justify-content: center;
+  color:black;
+}
+
+main > .container{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  line-height: 110%;
+  font-size: 20px;
+
+}
+.title{
+  font-family: 'Holtwood One SC', serif;
+  font-size: 50px;
+  font-weight:bold;
+  line-height: 80%;
+}
+
+
+.sub{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+main > .container .icon{
+  width: 30px;
+  height: 30px;
+}
+
+main > .container a{
+  height: 50px;
+  width: 60%;
+  padding-top: 5%;
+  background-color: #600a0a;
+  border-radius: 5px;
+    
 }
