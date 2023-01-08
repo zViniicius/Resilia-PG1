@@ -35,7 +35,6 @@
 html,
 body {
   width: 100%;
-  height: 100%;
   font-family: var(--ff-corpo);
   background-color: var(--bg-color-main);
   font-size: 12pt;
