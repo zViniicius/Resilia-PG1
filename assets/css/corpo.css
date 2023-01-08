@@ -1,0 +1,71 @@
+/* =============CORPO DA PÁGINA============= */
+.corpo {
+  text-align: justify;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 90px 0;
+}
+
+/* Texto central home */
+header {
+  position: absolute;
+  top: 0;
+  width: -webkit-fill-available;
+}
+main {
+  text-align: center;
+}
+main .container { 
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+ 
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.text{
+  flex-direction: column;
+  justify-content: center;
+  color:black;
+  height: 100%;
+  width: 100%;
+
+}
+
+main > .container{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  line-height: 110%;
+  font-size: 20px;
+}
+.title{
+  font-family: 'Holtwood One SC', serif;
+  font-size: 50px;
+  font-weight:bold;
+  line-height: 80%;
+}
+
+
+.sub{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main > .container .icon{
+  width: 30px;
+  height: 30px;
+}
+
+main > .container a{
+  height: 60%;
+  width: 60%;
+  margin-top: 5px;
+  background-color: #600a0a;
+  border-radius: 5px;
+  padding: 10px;
+}

@@ -17,32 +17,37 @@
     <div class="container flex-row">
         <a href="/index.html"> <div class="logo"></div></a>
         <ul id="itensMenu" class="flex-row">
-          <li><a href="/index.html" id="homeLink" >Home</a></li>
+          <li><a href="/index.html" id="homeLink" class="active">Home</a></li>
           <li>
             <a href="/cardapio.html" id="cardapioLink" class="">Cardápio</a>
           </li>
           <li><a href="/sobre.html" id="sobreLink" class="">Sobre</a></li>
-          <li><a href="/contato.html" id="contatoLink" class="active">Contato</a></li>
+          <li><a href="/contato.html" id="contatoLink" class="">Contato</a></li>
         </ul>
       </div>
    </header>
     <main>
-        <div class="conteiner">
-            <div id="number">
+        <div class="container flex-row">
+            <div class="number">
                 <img src="/assets/img/icon-contato/Group.png">
                 <h3> TERÇA - DOMINGO: 11H ÀS 22H </h3>  
-                <img src="/assets/img/icon-contato/Vector.png">               
+                <img src="/assets/img/icon-contato/Vector.png">
                 <h3>(11)96700-8890</h3>
                 <h3>(11)94002-8922</h3>
             </div>
 
-            <div class="iframe">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.975973525524!2d-46.74389898606215!3d-23.569306384678953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5673bda42797%3A0xf5fe7571f40bfb35!2sAv.%20Corifeu%20de%20Azevedo%20Marques%2C%203097%20-%20Vila%20Butant%C3%A3%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005339-000!5e0!3m2!1spt-BR!2sbr!4v1672968557594!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p>Rua Santa Maria, 243
-                  </p>
+            <div class="local">
+                <div id="mapa">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.975973525523!2d-46.74389898502198!3d-23.56930638467898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5673bda42797%3A0xf5fe7571f40bfb35!2sAv.%20Corifeu%20de%20Azevedo%20Marques%2C%203097%20-%20Vila%20Butant%C3%A3%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005339-000!5e0!3m2!1spt-BR!2sbr!4v1673047031319!5m2!1spt-BR!2sbr" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>             
+                </div>
+                  <p>Av. Corifeu de Azevedo Marques, 3097</br>
+                       Butantã - São Paulo/SP</p>
             </div>
 
             <div class="formulario">
+              <div id ="titulo">
+              <h2>FALE CONOSCO </h2>
+              </div>
                 <form action=”/formulario-contato” method=”post”>
                     <div>
                         <label for="nome">Nome</label>
@@ -56,18 +61,24 @@
                         <label for="texto">Mensagem</label>
                         <textarea id="texto" name="texto_usuario"></textarea>
                     </div>
-                    <div class="button">
+                    <div class="button1">
                         <button type="submit">Enviar</button>
                       </div>
+                      </form>
+            </div>
+        </div>
     </main>
+
+
     <footer>
-      <div class="container flex-row">
+        <div class="container flex-row">
         <!-- DIV contatos -->
-        <div id="contato" class="flex-row">
+        <div class="contato flex-row">
           <!-- DIV Contatos > Endereço -->
           <div id="endereco">
             <h3><i class="fa-sharp fa-solid fa-location-dot"></i></h3>
             <p>Rua Santa Maria, 243</p>
+            <p>Butantã - São Paulo</p>
           </div>
 
           <!-- DIV Contatos > Telefone -->
@@ -78,10 +89,11 @@
         </div>
 
         <!-- DIV Logo -->
-        <div id="copyright" class="flex-column">
-          <img src="./assets/img/logo.png" width="64px" alt="Logo AustBurger" />
-          <p>Copyright © 2023 AustBurger Inc</p>
-        </div>
+        <a href="/index.html">
+          <span id="copyright">AustBurger © 2023</span>
+          <div class="logo flex-column"></div
+        ></a>
+
         <!-- DIV Redes Sociais -->
         <ul id="itensSocial" class="flex-row">
           <li>
