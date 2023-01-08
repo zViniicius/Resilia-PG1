@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-   <meta charset="UTF-8"/>
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>AustBurguer</title>
-   <link rel="icon" href="/assets/img/logo.png"> 
-   <link rel="stylesheet" href="./assets/css/style.css"/>
-   <script
-    src="https://kit.fontawesome.com/03a0322255.js"
-    crossorigin="anonymous"
-   ></script>
- </head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AustBurguer</title>
+    <link rel="icon" href="./assets/img/logo.png" />
+
+    <!-- stylesheet pseudo-icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
+    integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    
+    <!-- Stylessheets -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/corpo.css" />
+    <link rel="stylesheet" href="./assets/css/rodape.css" />
+    <link rel="stylesheet" href="./assets/css/button.css" />
+    <link rel="stylesheet" href="./assets/css/cardapio.css" />
+
+    <!-- Jquery import -->
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+    
+    <!-- Fontawesome import -->
+    <script
+      src="https://kit.fontawesome.com/03a0322255.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
  <body>
    <header>
-    <div class="container flex-row">
-        <a href="/index.html"> <div class="logo"></div></a>
-        <ul id="itensMenu" class="flex-row">
-          <li><a href="/index.html" id="homeLink" class="active">Home</a></li>
-          <li>
-            <a href="/cardapio.html" id="cardapioLink" class="">Cardápio</a>
-          </li>
-          <li><a href="/sobre.html" id="sobreLink" class="">Sobre</a></li>
-          <li><a href="/contato.html" id="contatoLink" class="">Contato</a></li>
-        </ul>
+      <div class="menu flex-row">
+        <div class="logo"></div>
+        <div class="linksMenu flex-row">
+          <li class="links" id="link1"><a href="">Inicio</a></li>
+          <li class="links" id="link2"><a href="./cardapio.html">Cardápio</a></li>
+          <li class="links" id="link3"><a href="./sobre.html">Sobre</a></li>
+          <li class="links  active" id="link4"><a href="./contato.html">Contato</a></li>
+        </div>
       </div>
-   </header>
+    </header>
     <main>
-        <div class="container flex-row">
+        <div class="corpo">
             <div class="number">
-                <img src="/assets/img/icon-contato/Group.png">
+                <img src="./assets/img/icon-contato/Group.png">
                 <h3> TERÇA - DOMINGO: 11H ÀS 22H </h3>  
-                <img src="/assets/img/icon-contato/Vector.png">
+                <img src="./assets/img/icon-contato/Vector.png">
                 <h3>(11)96700-8890</h3>
                 <h3>(11)94002-8922</h3>
             </div>
@@ -48,7 +62,7 @@
               <div id ="titulo">
               <h2>FALE CONOSCO </h2>
               </div>
-                <form action=”/formulario-contato” method=”post”>
+                <form action=”./formulario-contato” method=”post”>
                     <div>
                         <label for="nome">Nome</label>
                         <input type="texto" id="nome" name="nome_usuario">
@@ -66,49 +80,41 @@
                       </div>
                       </form>
             </div>
+        <div class="iconsite">
+          <img src="./assets/img/icon-contato/Facebook.png" height="50" >
+          <img src="./assets/img/icon-contato/Instagram.png" height="50">
+          <img src="./assets/img/icon-contato/WhatsApp.png" height="50">
+        </div>
         </div>
     </main>
 
 
     <footer>
-        <div class="container flex-row">
-        <!-- DIV contatos -->
-        <div class="contato flex-row">
-          <!-- DIV Contatos > Endereço -->
-          <div id="endereco">
-            <h3><i class="fa-sharp fa-solid fa-location-dot"></i></h3>
-            <p>Rua Santa Maria, 243</p>
-            <p>Butantã - São Paulo</p>
-          </div>
-
-          <!-- DIV Contatos > Telefone -->
-          <div id="telefone">
-            <h3><i class="fa-solid fa-phone-volume"></i></h3>
-            <p>(11) 94456-8394</p>
-          </div>
+      <div class="rodape flex-row">
+        <div class="contato">
+          <span><i class="fa-sharp fa-solid fa-location-dot"></i>
+          Rua Santa Maria, 243</span>
+          <span></span><i class="fa-solid fa-phone-volume"></i>
+          (11) 99999-9999</span>
         </div>
-
-        <!-- DIV Logo -->
-        <a href="/index.html">
-          <span id="copyright">AustBurger © 2023</span>
-          <div class="logo flex-column"></div
-        ></a>
-
-        <!-- DIV Redes Sociais -->
-        <ul id="itensSocial" class="flex-row">
-          <li>
-            <a href="" id="1"><i class="fa-brands fa-whatsapp"></i></a>
-          </li>
-          <li>
-            <a href="" id="2"><i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="" id="3"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-        </ul>
+        <div class="copyright">
+          <p>Copyright © <span id="copyAno">-</span> AustBurger Inc</p>
+          <span id="copyrightFrase">Todos os direitos reservados</span>
+        </div>
+        <div class="redesSociais">
+          <span class="facebook"
+            ><a href="" id="2"><i class="fa-brands fa-facebook"></i></a
+          ></span>
+          <span class="instagram"
+            ><a href="" id="1"><i class="fa-brands fa-instagram"></i></a
+          ></span>
+          <span class="whatsapp"
+            ><a href="" id="1"><i class="fa-brands fa-whatsapp"></i></a
+          ></span>
+        </div>
       </div>
     </footer>
-
+<!-- Global JS -->
+    <script src="./assets/js/global.js"></script>
  </body>
-
  </html>
