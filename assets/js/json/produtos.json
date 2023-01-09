@@ -1,9 +1,30 @@
 {
-  "01": 
-  {
-  "categoria": "",
-  "descricao": "",
-  "preco": 0,
-  "desconto": 0
+  "01": {
+    "produto": "AustAngus",
+    "categoria": "Burger",
+    "descricao": "Smash de 160 gramas do nosso blend Angus, com aquela crostinha de Maillard que todos amamos e nossa fusão cremosa de cheddar com peperone no pão branco artesanal",
+    "img": "./assets/img/produtos/img-cardapio/austAngus.png",
+    "preco": 59.99
+  },
+  "02": {
+    "produto": "AustChesse",
+    "categoria": "Burger",
+    "descricao": "Hambúrguer da casa 100g, queijo cheddar, bacon, angus suculento, molho barbecue no pão branco artesanal da casa.",
+    "img": "./assets/img/produtos/img-cardapio/austCheese.png",
+    "preco": 45.99
+  },
+  "03": {
+    "produto": "AustPicanha",
+    "categoria": "Burger",
+    "descricao": "Hambúrguer da casa 160g, fusão cremosa de gorgonzola com mussarela, farofa de bacon, pimenta jalapeño no pão branco artesanal.",
+    "img": "./assets/img/produtos/img-cardapio/austPicanha.png",
+    "preco": 54.99
+  },
+  "04": {
+    "produto": "AustPicanha",
+    "categoria": "Burger",
+    "descricao": "Hambúrguer da casa 160g, fusão cremosa de gorgonzola com mussarela, farofa de bacon, pimenta jalapeño no pão branco artesanal.",
+    "img": "./assets/img/produtos/img-cardapio/austPicanha.png",
+    "preco": 54.99
   }
 }
