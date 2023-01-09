@@ -1,32 +1,30 @@
-/* =============CORPO DA PÁGINA============= */
-.corpo {
-  text-align: justify;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 90px 0;
-}
-
-/* Texto central home */
+/* ============= Home ================= */
+/* Texto central */
 header {
   position: absolute;
   top: 0;
   width: -webkit-fill-available;
 }
+
 main {
   text-align: center;
 }
-main .container { 
-  width: 100%;
-  padding-left: 15%;
-  padding-right: 15%;
- 
+
+.containerHome1{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  line-height: 110%;
+  font-size: 20px;
 }
-a {
+
+main > .buttonHome {
   text-decoration: none;
   color: #fff;
 }
 
-.text{
+.textHome{
   flex-direction: column;
   justify-content: center;
   color:black;
@@ -35,15 +33,7 @@ a {
 
 }
 
-main > .container{
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-  justify-content:space-between;
-  line-height: 110%;
-  font-size: 20px;
-}
-.title{
+.titleHome{
   font-family: 'Holtwood One SC', serif;
   font-size: 50px;
   font-weight:bold;
@@ -51,17 +41,17 @@ main > .container{
 }
 
 
-.sub{
+.subHome{
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-main > .container .icon{
+main > .containerHome1 .iconHome{
   width: 30px;
   height: 30px;
 }
 
-main > .container a{
+main > .containerHome1 a{
   height: 60%;
   width: 60%;
   margin-top: 5px;
@@ -69,6 +59,28 @@ main > .container a{
   border-radius: 5px;
   padding: 10px;
 }
+
+/* Título imagens interior */
+.containerHome2{
+  text-align: center;
+  justify-content: space-around;
+  font-size: 20px;
+  font-family: 'Prociono', serif;
+  padding-top: 10%;
+}
+
+.fraseHome1{
+  font-size: 25px;
+}
+
+.fraseHome2{
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  font-size: 60px;
+}
+
 /* =============INICIO CORPO CARDÁPIO============= */
 .cardList {
   flex-wrap: wrap;

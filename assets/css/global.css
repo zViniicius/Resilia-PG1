@@ -30,7 +30,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 html,
 body {
@@ -38,13 +38,14 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   font-family: var(--ff-corpo);
   background-color: var(--bg-color-main);
   font-size: 12pt;
   overflow-x: hidden;
-
 }
+
+
 a {
   text-decoration: none;
   color: var(--font-color-title);
