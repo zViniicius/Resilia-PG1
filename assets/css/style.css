@@ -34,11 +34,8 @@ header {
 main {
   text-align: center;
 }
-main .container { 
-  width: 100%;
-  padding-left: 15%;
-  padding-right: 15%;
- 
+main .container {
+  width: 80%;
 }
 a {
   text-decoration: none;
