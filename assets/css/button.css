@@ -1,0 +1,47 @@
+/* Se precisar de mais icones, pegar em: https://fontawesome.com/v5/cheatsheet */
+/* ====BUTTON ICONS=== */
+.cart-add::before {
+  font-family: fontAwesome;
+  content: '\f217\00a0';
+}
+.add::before {
+  font-family: fontAwesome;
+  content: '\f067\00a0';
+}
+.remove::before {
+  font-family: fontAwesome;
+  content: ' \f068\00a0';
+}
+.exclude::before {
+  font-family: fontAwesome;
+  content: '\f014\00a0';
+}
+.check::before {
+  font-family: fontAwesome;
+  content: '\f00c\00a0';
+}
+.send::before {
+  font-family: fontAwesome;
+  content: '\f0d1\00a0';
+}
+.pay::before {
+  font-family: fontAwesome;
+  content: '\f4c0\00a0';
+}
+
+.btn {
+  background-color: #600a0a;
+  border: none;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  padding: 5px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #8b0a0a;
+}
+.btn:active {
+  background-color: #2e0404;
+}

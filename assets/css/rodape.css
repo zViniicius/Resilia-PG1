@@ -1,0 +1,39 @@
+/* =============RODAPÉ============= */
+.rodape {
+  background-color: var(--bg-color-header);
+  color: var(--bg-color-main);
+  position: absolute;
+  width: -webkit-fill-available;
+  bottom: 0;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgb(56 21 21 / 85%) 0px -3px 4px 0px;
+}
+.redesSociais {
+  width: 33%;
+  text-align: end;
+}
+.copyright {
+  width: 33%;
+  text-align: center;
+}
+.redesSociais > span > a > i {
+  font-size: 2em;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+.redesSociais > span > a > i:hover {
+  transform: translatey(2px);
+  border-radius: 100%;
+  box-shadow: 0px 0px 4px 5px #8a0101;
+}
+.contato {
+  width: 33%;
+  margin: 0px 10px;
+  text-align: start;
+}
+.contato > span {
+  margin: 0 5px;
+}
+

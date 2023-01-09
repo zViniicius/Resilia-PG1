@@ -1,0 +1,42 @@
+/* =============MENU============= */
+.menu {
+  /* z-index: 4; */
+  width: 100%;
+  position:fixed;
+  background-color: var(--bg-color-header);
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 3px 5px 0px rgb(56 21 21 / 85%);
+}
+.logo {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 8em;
+    height: 8em;
+    top: 25px;
+    left: 7px;
+}
+.linksMenu {
+  justify-content: flex-end;
+}
+.links {
+  color: var(--font-color-title);
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.links:hover {
+  background-color: #380404;
+}
+.active {
+  border-radius: 5px;
+  background-color: var(--bg-color-hover);
+}

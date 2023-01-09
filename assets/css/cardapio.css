@@ -1,0 +1,93 @@
+.aside {
+  width: 350px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+  padding: 0 16px;
+  color: white;
+  background-color: var(--bg-color-header);
+}
+.open {
+  transform: translateX(0);
+}
+.close {
+  transform: translateX(100%);
+}
+
+.aside-content {
+  margin: 100px 0;
+  width: 100%;
+}
+.line {
+  padding: 10px 0;
+  position: relative;
+  margin: 10px 0;
+}
+.line::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(37, 0, 0);
+}
+.infoPriceCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.controlsCart {
+  color: var(--font-color-title);
+  padding: 5px;
+  margin: 0 5px;
+  border-radius: 5px;
+  background-color: #450404;
+  width: 100px;
+  text-align: center;
+  box-shadow: inset 2px 2px 3px 1px #2e0000;
+}
+.controlsCart > button {
+  margin: 0 2px;
+}
+
+.cartHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.cartHeader > .closebtnCart,
+.cartTitle {
+  font-size: 2em;
+}
+.cartHeader > .closebtnCart {
+  cursor: pointer;
+  margin: 0 10px;
+}
+.btn.cart {
+  background-color: transparent;
+}
+.btn.cart:hover {
+  background: transparent;
+}
+
+#cartQtd {
+  font-size: 1em;
+  color: var(--font-color-title);
+  background: transparent;
+  text-align: center;
+  width: 20px;
+  border: none;
+}
+
+#opencart {
+  fill: #fff;
+  font-size: 3em;
+  top: 100px;
+  right: 0;
+  position: absolute;
+  margin-right: 30px;
+}

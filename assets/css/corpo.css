@@ -1,0 +1,162 @@
+/* =============CORPO DA PÁGINA============= */
+@import url('https://fonts.googleapis.com/css2?family=Rambla&display=swap');
+
+/* =============INICIO CORPO SOBRE============= */
+/* Primeira parte Quem Somos - Textos */
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Rambla, sans-serif;
+  color: var(--font-color);
+}
+.text h1 {
+  color: #2c2c2c;
+  font-size: 2.5em;
+  padding: 0 auto;
+}
+#title {
+  color: #2c2c2c;
+  font-size: 2.5em;
+  padding: 0 auto;
+  margin-top: 80px;
+}
+.paragrafos {
+  font-size: 1.5em;
+  margin: 30px 0px 30px 0px;
+  padding: 15px;
+  width: 690px;
+}
+
+/* Segunda parte Quem Somos - Equipe */
+main > .container > .text > .equipe {
+  width: 50%;
+}
+
+#CEO {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#CEO > .nome {
+  color: var(--font-color-body);
+}
+.tamanhoImg {
+  margin-top: 20px;
+  width: 200px;
+}
+.employees {
+  display: flex;
+  justify-content: space-around;
+}
+.dadosEmployees {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.dadosEmployees > .nome {
+  color: var(--font-color-body);
+}
+.dadosEmployees p,
+#CEO p {
+  font-size: 1.5em;
+}
+/* =============FIM CORPO SOBRE============= */
+
+/* Texto central home */
+header {
+  position: absolute;
+  top: 0;
+  width: -webkit-fill-available;
+}
+main {
+  text-align: center;
+}
+main .container {
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.text {
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  height: 100%;
+  width: 100%;
+}
+main > .container {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 110%;
+  font-size: 20px;
+}
+.title {
+  font-family: 'Holtwood One SC', serif;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 80%;
+}
+
+.sub {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main > .container .icon {
+  width: 30px;
+  height: 30px;
+}
+
+main > .container a {
+  height: 60%;
+  width: 60%;
+  margin-top: 5px;
+  background-color: #600a0a;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* =============INICIO CORPO CARDÁPIO============= */
+.cardList {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  width: 18rem;
+  background: #e6e0d4;
+  box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #600a0a;
+  margin: 15px 0;
+}
+.card-body {
+  margin-top: 10px;
+  width: 16rem;
+}
+.card-footer {
+  margin: 10px 0;
+  width: 16rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-footer > p {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+/* =============FIM CORPO CARDÁPIO============= */
