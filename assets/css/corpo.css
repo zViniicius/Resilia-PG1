@@ -1,5 +1,76 @@
 /* ============= Home ================= */
 /* Texto central */
+/* =============CORPO DA PÁGINA============= */
+@import url('https://fonts.googleapis.com/css2?family=Rambla&display=swap');
+
+/* =============INICIO CORPO SOBRE============= */
+/* Primeira parte Quem Somos - Textos */
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Rambla, sans-serif;
+  color: var(--font-color);
+}
+.text h1 {
+  color: #2c2c2c;
+  font-size: 2.5em;
+  padding: 0 auto;
+}
+#title {
+  color: #2c2c2c;
+  font-size: 2.5em;
+  padding: 0 auto;
+  margin-top: 80px;
+}
+.paragrafos {
+  font-size: 1.5em;
+  margin: 30px 0px 30px 0px;
+  padding: 15px;
+  width: 690px;
+}
+
+/* Segunda parte Quem Somos - Equipe */
+main > .container > .text > .equipe {
+  width: 50%;
+}
+
+#CEO {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#CEO > .nome {
+  color: var(--font-color-body);
+}
+.tamanhoImg {
+  margin-top: 20px;
+  width: 200px;
+}
+.employees {
+  display: flex;
+  justify-content: space-around;
+}
+.dadosEmployees {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.dadosEmployees > .nome {
+  color: var(--font-color-body);
+}
+.dadosEmployees p,
+#CEO p {
+  font-size: 1.5em;
+}
+/* =============FIM CORPO SOBRE============= */
+
+/* ============= Home ================= */
+
+/* Texto central home */
 header {
   position: absolute;
   top: 0;
@@ -27,19 +98,19 @@ main > .buttonHome {
 .textHome{
   flex-direction: column;
   justify-content: center;
-  color:black;
+  color: black;
   height: 100%;
   width: 100%;
-
 }
 
 .titleHome{
-  font-family: 'Holtwood One SC', serif;
-  font-size: 50px;
-  font-weight:bold;
-  line-height: 80%;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 110%;
+  font-size: 20px;
 }
-
 
 .subHome{
   padding-top: 20px;
