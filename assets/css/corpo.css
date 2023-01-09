@@ -15,7 +15,13 @@
   color: #2c2c2c;
   font-size: 2.5em;
   padding: 0 auto;
-  margin: 0 auto;
+}
+
+#title {
+  color: #2c2c2c;
+  font-size: 2.5em;
+  padding: 0 auto;
+  margin-top: 80px;
 }
 
 .corpo {
@@ -36,7 +42,7 @@
 
 
 main > .container > .text > .equipe {
-  width: 70%;
+  width: 50%;
 }
 
 #CEO {
@@ -47,7 +53,7 @@ main > .container > .text > .equipe {
 }
 
 #CEO > .nome{
-  color: var(--font-color);
+  color: var(--font-color-body);
 }
 
 .tamanhoImg {
@@ -65,10 +71,11 @@ main > .container > .text > .equipe {
   flex-direction: column;
   align-items: center;
   margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 .dadosEmployees > .nome {
-  color: var(--font-color);
+  color: var(--font-color-body);
 }
 
 .dadosEmployees p, #CEO p {
