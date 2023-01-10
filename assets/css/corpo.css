@@ -209,6 +209,7 @@ main > .containerHome1 a{
   
 }
 .corpo-left{
+  margin-top: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,6 +226,7 @@ main > .containerHome1 a{
 
 
 #horario, #telefone{
+  color:#600A0A;
   align-items: center;
   flex-direction: column;
   display: flex;
@@ -251,6 +253,7 @@ main > .containerHome1 a{
   align-items: center;
 }
 .formulario{
+  box-shadow:0px 10px 20px 0px rgba(179, 171, 171, 0.7) ;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -288,15 +291,18 @@ button{
   align-items: flex-end; 
   justify-content: space-evenly;
   align-items: center;
-
-  width: 450px;
+  width: 400px;
   height: 100px;
 }
-#whatsapp{
-  width: 9x;;
+#instagram{
+  height: 40px;
 }
-
-
+#facebook{
+  height: 40px;
+}
+#whatsapp{
+  height: 40px;
+}
 
 
 /* =============INICIO CORPO CONTATO============= */
