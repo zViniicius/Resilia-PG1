@@ -68,7 +68,7 @@ a {
   margin: 0 auto;
   padding: 90px 0;
 }
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
@@ -82,4 +82,4 @@ a {
   .container {
     max-width: 540px;
   }
-}
+} */
