@@ -57,10 +57,30 @@ a {
   display: flex;
   flex-direction: column;
 }
-
+/* .container {
+  width: 100%;
+  padding: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+} */
 .corpo {
   text-align: justify;
   max-width: 1200px;
   margin: 0 auto;
   padding: 90px 0;
 }
+/* @media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+} */
