@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -40,26 +40,37 @@
         </div>
       </div>
     </header>
-    <main>
-        <div class="corpo">
-            <div class="number">
-                <img src="./assets/img/icon-contato/Group.png">
-                <h3> TERÇA - DOMINGO: 11H ÀS 22H </h3>  
-                <img src="./assets/img/icon-contato/Vector.png">
-                <h3>(11)96700-8890</h3>
-                <h3>(11)94002-8922</h3>
+
+
+  <main>
+
+      <div class="corpoRight"></div>
+    </div>
+
+      <div class="corpo flex-row">
+        <div class="corpo-left">
+          <div class="contato">
+            <span id="horario"> 
+              <img id="imgHorario" src="./assets/img/icon-contato/Group.png" width="40px">
+              <h4> TERÇA - DOMINGO: 11H ÀS 22H </h4>   
+             </span> 
+             <span id="telefone">
+              <img src="./assets/img/icon-contato/Vector.png" width="40px">
+                <h4>(11)96700-8890</h4>
+                <h4>(11)94002-8922</h4>
+             </span>
             </div>
 
-            <div class="local">
-                <div id="mapa">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.975973525523!2d-46.74389898502198!3d-23.56930638467898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5673bda42797%3A0xf5fe7571f40bfb35!2sAv.%20Corifeu%20de%20Azevedo%20Marques%2C%203097%20-%20Vila%20Butant%C3%A3%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005339-000!5e0!3m2!1spt-BR!2sbr!4v1673047031319!5m2!1spt-BR!2sbr" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>             
-                </div>
-                  <p>Av. Corifeu de Azevedo Marques, 3097</br>
-                       Butantã - São Paulo/SP</p>
+            <div class="localcontato">
+              <img id="imgMapa" src="./assets/img/icon-contato/Mapsicle Map.png">
+                  <h4>Rua Santa Maria, 243</h4>
+                  <h4>Butantã - São Paulo/SP</h4>               
             </div>
+            </div> 
 
+           <div class="corpo-right">
             <div class="formulario">
-              <div id ="titulo">
+              <div id="titulo">
               <h2>FALE CONOSCO </h2>
               </div>
                 <form action=”./formulario-contato” method=”post”>
@@ -75,17 +86,18 @@
                         <label for="texto">Mensagem</label>
                         <textarea id="texto" name="texto_usuario"></textarea>
                     </div>
-                    <div class="button1">
-                        <button type="submit">Enviar</button>
-                      </div>
-                      </form>
+                    <div>
+                        <button class="btn sent" id="btnSend" type="submit">Enviar</button>
+                    </div>
+                  </form>
             </div>
-        <div class="iconsite">
-          <img src="./assets/img/icon-contato/Facebook.png" height="50" >
-          <img src="./assets/img/icon-contato/Instagram.png" height="50">
-          <img src="./assets/img/icon-contato/WhatsApp.png" height="50">
+        <div class="icssonsite">
+          <img id="instagram" src="./assets/img/icon-contato/Instagram.png" >
+          <img id="facebook" src="./assets/img/icon-contato/Facebook.png" >
+          <img id="whatsapp" src="./assets/img/icon-contato/WhatsApp.png">
         </div>
-        </div>
+      </div>
+        </div> 
     </main>
 
 
