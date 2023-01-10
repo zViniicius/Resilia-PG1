@@ -1,5 +1,3 @@
-/* ============= Home ================= */
-/* Texto central */
 /* =============CORPO DA PÁGINA============= */
 @import url('https://fonts.googleapis.com/css2?family=Rambla&display=swap');
 
@@ -88,6 +86,9 @@ main {
   justify-content:space-between;
   line-height: 110%;
   font-size: 20px;
+  color: #000;
+  display: flex;
+
 }
 
 main > .buttonHome {
@@ -105,16 +106,18 @@ main > .buttonHome {
 
 .titleHome{
   flex-direction: row;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  line-height: 110%;
-  font-size: 20px;
+  justify-content:space-between;
+  line-height: 90%;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 150px;
+  font-family: 'Holtwood One SC', serif;
 }
 
 .subHome{
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 main > .containerHome1 .iconHome{
@@ -138,6 +141,8 @@ main > .containerHome1 a{
   font-size: 20px;
   font-family: 'Prociono', serif;
   padding-top: 10%;
+  color: #000;
+
 }
 
 .fraseHome1{
@@ -150,6 +155,20 @@ main > .containerHome1 a{
   line-height: 100%;
   letter-spacing: 2px;
   font-size: 60px;
+}
+
+.imgintHome{
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 160px;
+  margin-top: 80px;
+}
+
+.imgintHome img{
+  width: 90%;
+  height: 90%;
 }
 
 /* =============INICIO CORPO CARDÁPIO============= */
@@ -187,3 +206,111 @@ main > .containerHome1 a{
 }
 
 /* =============FIM CORPO CARDÁPIO============= */
+/* =============INICIO CORPO CONTATO============= */
+
+ /* Cofigurações da página contato */
+/* Cofigurações da pagina contato */
+.corpo-left, .corpo-right{
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.corpo-left{
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  
+}
+.corpo-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+
+#horario, #telefone{
+  color:#600A0A;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 20em;
+  width: 20em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.localcontato {
+  display: flex;
+  color:#600A0A;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+#imgMapa{
+  height: 25em;
+  align-items: center;
+}
+.formulario{
+  box-shadow:0px 10px 20px 0px rgba(179, 171, 171, 0.7) ;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 390px;
+  height: 400px;
+  background-color: #E5E0D4;
+  color: #600A0A;
+}
+#titulo{
+  display: flex;
+  color:#600A0A;
+
+}
+#nome, #email, #texto{
+  border-color: #E5E0D4;
+  background-color: #B7B3A1;
+  border-radius: 5px;
+  width: 250px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;  
+}
+button{
+  display: flex;
+  background-color: #600A0A;
+  color: white;
+  margin-top: 5px;
+
+}
+
+.icssonsite{
+  display: flex;
+  align-items: flex-end; 
+  justify-content: space-evenly;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+}
+#instagram{
+  height: 40px;
+}
+#facebook{
+  height: 40px;
+}
+#whatsapp{
+  height: 40px;
+}
+
+
+/* =============INICIO CORPO CONTATO============= */
