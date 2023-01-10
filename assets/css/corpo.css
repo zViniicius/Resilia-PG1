@@ -215,15 +215,15 @@ main > .container a {
   align-items: center;
 }
 .formulario{
-  box-shadow:0px 10px 20px 0px rgba(179, 171, 171, 0.7) ;
+  box-shadow:0px 10px 20px 0px rgba(134, 122, 122, 0.7) ;
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  width: 390px;
+  width: 400px;
   height: 400px;
-  background-color: #E5E0D4;
+  background-color: #E5E0D4; 
   color: #600A0A;
 }
 #titulo{
@@ -235,8 +235,8 @@ main > .container a {
   border-color: #E5E0D4;
   background-color: #B7B3A1;
   border-radius: 5px;
-  width: 250px;
-  height: 30px;
+  width: 300px;
+  height: 35px;
   display: flex;
   flex-direction: column;  
 }
