@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AustBurguer</title>
-    <link rel="icon" href="/assets/img/logo.png" />
+    <link rel="icon" href="./assets/img/logo.png" />
 
     <!-- stylesheet pseudo-icons  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
-    integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+
     <!-- Stylessheets -->
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
@@ -20,8 +24,12 @@
     <link rel="stylesheet" href="./assets/css/cardapio.css" />
 
     <!-- Jquery import -->
-    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Fontawesome import -->
     <script
       src="https://kit.fontawesome.com/03a0322255.js"
@@ -31,15 +39,26 @@
 
   <body>
     <!-- Navbar -->
-    <header>
-      <div class="menu flex-row">
-        <div class="logo"></div>
-        <ul class="linksMenu flex-row">
-          <li class="links" id="link0"><a href="/index.html">Inicio</a></li>
-          <li class="links active" id="link1"><a href="/cardapio.html">Cardápio</a></li>
-          <li class="links" id="link2"><a href="/sobre.html">Sobre</a></li>
-          <li class="links" id="link3"><a href="/contato.html">Contato</a></li>
-        </ul>
+   <header>
+      <div class="container">
+        <nav class="navBar flex-row">
+          <button class="btn burger" id="btnNav">☰</button>
+          <div class="">
+            <a href="./index.html"
+              ><img
+                id="logoHeader"
+                class="logo"
+                src="./assets/img/logo.png"
+                alt="logo"
+            /></a>
+          </div>
+          <ul class="navLinks flex-row">
+            <li id="link1"><a href="./index.html">Inicio</a></li>
+            <li id="link2"><a href="#">Cardápio</a></li>
+            <li id="link3"><a href="./sobre.html">Sobre</a></li>
+            <li id="link4"><a href="./contato.html">Contato</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
  <aside>
@@ -78,30 +97,25 @@
 
     <!-- Footer -->
     <footer>
-      <div class="rodape flex-row">
-        <div class="contato">
-          <span><i class="fa-sharp fa-solid fa-location-dot"></i>
-          Rua Santa Maria, 243</span>
-          <span></span><i class="fa-solid fa-phone-volume"></i>
-          (11) 99999-9999</span>
-        </div>
-        <div class="copyright">
-          <p>Copyright © <span id="copyAno">-</span> AustBurger Inc</p>
-          <span id="copyrightFrase">Todos os direitos reservados</span>
-        </div>
-        <div class="redesSociais">
-          <span class="facebook"
-            ><a href="" id="2"><i class="fa-brands fa-facebook"></i></a
-          ></span>
-          <span class="instagram"
-            ><a href="" id="1"><i class="fa-brands fa-instagram"></i></a
-          ></span>
-          <span class="whatsapp"
-            ><a href="" id="1"><i class="fa-brands fa-whatsapp"></i></a
-          ></span>
-        </div>
-      </div>
-    </footer>
+  <div class="container flex-row">
+    <div class="contato flex-column">
+      <span id="endereco">Rua Santa Maria, 243</span>
+      <span id="telefone">(11) 99999-9999</span>
+    </div>
+    <div class="copyright">
+    <h5>© <span id="copyAno">-</span> AustBurger Inc</h3>
+    <h6>Todos os direitos reservados</h6>
+    </div>
+    <div class="networks">
+      <ul class="networkList flex-row">
+          <li id="whatsapp"></li>
+          <li id="instagram"></li>
+          <li id="facebook"></li>
+        
+      </ul>
+    </div>
+  </div>
+</footer>
 
 
     <!-- Global JS -->
