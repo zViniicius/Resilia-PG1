@@ -37,3 +37,15 @@
   margin: 0 5px;
 }
 
+#whatsapp::before {
+  font-family: fontawesome;
+  content: '\f232\00a0';
+}
+#instagram::before {
+  font-family: fontawesome;
+  content: '\f16d\00a0';
+}
+#facebook::before {
+  font-family: fontawesome;
+  content: '\f082\00a0';
+}
