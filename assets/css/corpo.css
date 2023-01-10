@@ -203,7 +203,7 @@ main > .container a {
   flex-direction: column;
   align-items: center;
 }
-.localcontato, p{
+.localcontato{
   display: flex;
   color:#600A0A;
   flex-direction: column;
@@ -265,6 +265,16 @@ button{
 #whatsapp{
   height: 40px;
 }
-
+adress{
+  display:flex;
+  background-color: #600a0a;
+  color: rgb(251, 251, 251);
+  margin-top: 20px;
+  width: 100%;
+  height: 4em;
+  justify-content: center;
+  align-items: flex-end;
+  
+}
 
 /* =============INICIO CORPO CONTATO============= */
