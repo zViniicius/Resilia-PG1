@@ -3,14 +3,14 @@
     "produto": "AustCheese",
     "categoria": "Burger",
     "descricao": "Hambúrguer da casa 100g, queijo cheddar, bacon, angus suculento, molho barbecue no pão branco artesanal da casa.",
-    "img": "../../img/produtos/img-cardapio/austCheese.png",
+    "img": "./assets/img/produtos/img-cardapio/austCheese.png",
     "preco": 32.99
   },
   "02": {
     "produto": "AustPicanha",
     "categoria": "Burger",
     "descricao": "Hambúrguer da casa 160g, fusão cremosa de gorgonzola com mussarela, farofa de bacon, pimenta jalapeño no pão branco artesanal.",
-    "img": "../../img/produtos/img-cardapio/austPicanha.png",
+    "img": "./assets/img/produtos/img-cardapio/austPicanha.png",
     "preco": 41.99
   },
   "03": {

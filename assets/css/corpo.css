@@ -202,6 +202,8 @@ main > .containerHome1 a{
 
 #radio1:checked ~ .auto-nav .auto-btn1 {
   background-color: #FFF;
+}
+
 /* Título imagens interior */
 .containerHome2{
   text-align: center;
@@ -317,11 +319,7 @@ main > .containerHome1 a{
   flex-direction: column;
   align-items: center;
 }
-<<<<<<< HEAD
 .localcontato{
-=======
-.localcontato {
->>>>>>> 9d73d4b0e576ae06155acb8e0fc41cbef28e05f6
   display: flex;
   color:#600A0A;
   flex-direction: column;
