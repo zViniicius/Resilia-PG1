@@ -203,6 +203,7 @@ main > .containerHome1 a{
 #radio1:checked ~ .auto-nav .auto-btn1 {
   background-color: #FFF;
 }
+
 /* Título imagens interior */
 .containerHome2{
   text-align: center;
