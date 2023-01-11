@@ -22,7 +22,12 @@
 }
 .send::before {
   font-family: fontAwesome;
-  content: '\f0d1\00a0';
+  content:
+   '\f0d1\00a0';
+}
+.sent::before {
+  font-family: fontAwesome;
+  content: '\f0e0\00a0';
 }
 .sent::before {
   font-family: fontAwesome;

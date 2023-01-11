@@ -57,7 +57,10 @@ body {
   font-size: 12pt;
   overflow-x: hidden;
   transition: 2s;
+
 }
+
+
 a {
   text-decoration: none;
   color: var(--font-color-title);
@@ -99,4 +102,4 @@ main {
   .container {
     max-width: 540px;
   }
-}
+} */

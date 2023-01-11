@@ -1,3 +1,4 @@
+
 $(() => {
   //Automatic update tag <title> in <head>
   {
@@ -5,6 +6,7 @@ $(() => {
       .toUpperCase()
       .replace(/(\.\w*)/g, '')
       .split('/');
+
     $('title').text(path[1] + ` - AustBurger`);
   }
 
@@ -15,11 +17,14 @@ $(() => {
   }
 });
 
+
 /* =============INICIO JS HEADER============= */
+
 $('#btnNav').on('click', () => {
   let btnNav = $('#btnNav');
   let navBar = $('.navBar'),
     navBH = navBar.height();
+
 
   navBar.toggleClass('show'); //Add .show class to navBar // Adicione a classe .show no elemento NavBar
   btnNav.toggleClass('open'); //Add .open class to navBar // Adicione a classe .open no elemento NavBar
@@ -63,3 +68,4 @@ $('.toggleCart').on('click', e => {
     $('.cart').attr('aria-expanded', 'false');
   }
 });
+

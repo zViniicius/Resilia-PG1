@@ -1,30 +1,86 @@
 {
   "01": {
-    "produto": "AustAngus",
-    "categoria": "Burger",
-    "descricao": "Smash de 160 gramas do nosso blend Angus, com aquela crostinha de Maillard que todos amamos e nossa fusão cremosa de cheddar com peperone no pão branco artesanal",
-    "img": "./assets/img/produtos/img-cardapio/austAngus.png",
-    "preco": 59.99
-  },
-  "02": {
-    "produto": "AustChesse",
+    "produto": "AustCheese",
     "categoria": "Burger",
     "descricao": "Hambúrguer da casa 100g, queijo cheddar, bacon, angus suculento, molho barbecue no pão branco artesanal da casa.",
     "img": "./assets/img/produtos/img-cardapio/austCheese.png",
-    "preco": 45.99
+    "preco": 32.99
+  },
+  "02": {
+    "produto": "AustPicanha",
+    "categoria": "Burger",
+    "descricao": "Hambúrguer da casa 160g, fusão cremosa de gorgonzola com mussarela, farofa de bacon, pimenta jalapeño no pão branco artesanal.",
+    "img": "./assets/img/produtos/img-cardapio/austPicanha.png",
+    "preco": 41.99
   },
   "03": {
-    "produto": "AustPicanha",
+    "produto": "AustSalad",
     "categoria": "Burger",
-    "descricao": "Hambúrguer da casa 160g, fusão cremosa de gorgonzola com mussarela, farofa de bacon, pimenta jalapeño no pão branco artesanal.",
-    "img": "./assets/img/produtos/img-cardapio/austPicanha.png",
-    "preco": 54.99
+    "descricao": "Hambúrguer da casa 100g, queijo mussarela, alface, tomate, maionese da casa e pão brioche.",
+    "img": "./assets/img/produtos/img-cardapio/austSalad.png",
+    "preco": 32.99
   },
   "04": {
-    "produto": "AustPicanha",
+    "produto": "AustOriginal",
     "categoria": "Burger",
-    "descricao": "Hambúrguer da casa 160g, fusão cremosa de gorgonzola com mussarela, farofa de bacon, pimenta jalapeño no pão branco artesanal.",
-    "img": "./assets/img/produtos/img-cardapio/austPicanha.png",
-    "preco": 54.99
+    "descricao": "Dois hamburgueres da casa 90g, cebola roxa, bacon, delicioso molho cheddar e pão australiano.",
+    "img": "./assets/img/produtos/img-cardapio/austOriginal.png",
+    "preco": 42.90
+  },
+  "05": {
+    "produto": "AustChicken",
+    "categoria": "Burger",
+    "descricao": "Hambúrguer de frango da casa 120g, queijo cheddar, alface, tomate, maionese da casa pão artesanal da casa.",
+    "img": "./assets/img/produtos/img-cardapio/austChicken.png",
+    "preco": 32.99
+  },
+  "06": {
+    "produto": "AustSmash",
+    "categoria": "Burger",
+    "descricao": "Um delicioso smash com 100g de fraldinha, bacon, cheddar e cebola caramelizada.",
+    "img": "./assets/img/produtos/img-cardapio/austSmash.png",
+    "preco": 35.99
+  },
+  "07": {
+    "produto": "Batata + Bebida",
+    "categoria": "Acompanhamento",
+    "descricao": "Acompanha 100g de batata frita e um refri geladinho.",
+    "img": "./assets/img/produtos/img-cardapio/combo_fritas.png",
+    "preco": 14.90
+  },
+  "08": {
+    "produto": "Batata Média",
+    "categoria": "Acompanhamento",
+    "descricao": "Acompanha 150g de batata frita.",
+    "img": "./assets/img/produtos/img-cardapio/fritas_M.png",
+    "preco": 8.90
+  },
+  "09": {
+    "produto": "Batata Cheddar e Bacon",
+    "categoria": "Acompanhamento",
+    "descricao": "Deliciosas batatas fritas cobertas com queijo cheddar e bacon.",
+    "img": "./assets/img/produtos/img-cardapio/fritas_G.png",
+    "preco": 19.90
+  },
+  "10": {
+    "produto": "Suco de Frutas Natural",
+    "categoria": "Bebida",
+    "descricao": "Temos suco de laranja, abacaxi com hortelã, manga e maracujá.",
+    "img": "./assets/img/produtos/img-cardapio/suco.png",
+    "preco": 7.90
+  },
+  "11": {
+    "produto": "Refrigerantes",
+    "categoria": "Bebida",
+    "descricao": "Temos Coca-Cola, Guaraná, Fanta Laranja e Fanta Uva.",
+    "img": "./assets/img/produtos/img-cardapio/refri.png",
+    "preco": 9.90
+  },
+  "12": {
+    "produto": "Água",
+    "categoria": "Bebida",
+    "descricao": "500ml.",
+    "img": "./assets/img/produtos/img-cardapio/agua.png",
+    "preco": 3.90
   }
 }
