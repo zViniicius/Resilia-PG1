@@ -66,63 +66,109 @@ main > .container > .text > .equipe {
 }
 /* =============FIM CORPO SOBRE============= */
 
+/* ============= Home ================= */
+
 /* Texto central home */
 header {
   position: absolute;
   top: 0;
   width: -webkit-fill-available;
 }
+
 main {
   text-align: center;
 }
-main .container {
-  width: 100%;
-  padding-left: 15%;
-  padding-right: 15%;
+
+.containerHome1{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  line-height: 110%;
+  font-size: 20px;
+  color: #000;
+  display: flex;
+
 }
-a {
+
+main > .buttonHome {
   text-decoration: none;
   color: #fff;
 }
-.text {
+
+.textHome{
   flex-direction: column;
   justify-content: center;
   color: black;
   height: 100%;
   width: 100%;
 }
-main > .container {
+
+.titleHome{
   flex-direction: row;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  line-height: 110%;
-  font-size: 20px;
-}
-.title {
-  font-family: 'Holtwood One SC', serif;
-  font-size: 50px;
+  justify-content:space-between;
+  line-height: 90%;
+  font-size: 60px;
   font-weight: bold;
-  line-height: 80%;
+  margin-top: 150px;
+  font-family: 'Holtwood One SC', serif;
 }
 
-.sub {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.subHome{
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
-main > .container .icon {
+main > .containerHome1 .iconHome{
   width: 30px;
   height: 30px;
 }
 
-main > .container a {
+main > .containerHome1 a{
   height: 60%;
   width: 60%;
   margin-top: 5px;
   background-color: #600a0a;
   border-radius: 5px;
   padding: 10px;
+}
+
+/* Título imagens interior */
+.containerHome2{
+  text-align: center;
+  justify-content: space-around;
+  font-size: 20px;
+  font-family: 'Prociono', serif;
+  padding-top: 10%;
+  color: #000;
+
+}
+
+.fraseHome1{
+  font-size: 25px;
+}
+
+.fraseHome2{
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  font-size: 60px;
+}
+
+.imgintHome{
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 160px;
+  margin-top: 80px;
+}
+
+.imgintHome img{
+  width: 90%;
+  height: 90%;
 }
 
 /* Carousel - CSS */
@@ -273,7 +319,7 @@ main > .container a {
   flex-direction: column;
   align-items: center;
 }
-.localcontato{
+.localcontato, p{
   display: flex;
   color:#600A0A;
   flex-direction: column;
