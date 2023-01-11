@@ -1,42 +1,40 @@
 /* =============RODAPÉ============= */
-.rodape {
-  background-color: var(--bg-color-header);
-  color: var(--bg-color-main);
-  position: absolute;
-  width: -webkit-fill-available;
-  bottom: 0;
+footer > .container {
+  z-index: 4;
   height: 50px;
-  justify-content: space-between;
+  position: relative;
+  bottom: 0;
+  padding: 10px 0;
   align-items: center;
-  box-shadow: rgb(56 21 21 / 85%) 0px -3px 4px 0px;
-}
-.redesSociais {
-  width: 33%;
-  text-align: end;
-}
-.copyright {
-  width: 33%;
   text-align: center;
+  justify-content: space-between;
+  background-color: var(--bg-color-header);
+  color: var(--font-color-title);
 }
-.redesSociais > span > a > i {
-  font-size: 2em;
-  margin: 0 10px;
-  transition: all 0.3s ease;
-}
-.redesSociais > span > a > i:hover {
-  transform: translatey(2px);
-  border-radius: 100%;
-  box-shadow: 0px 0px 4px 5px #8a0101;
-}
-.contato {
-  width: 33%;
-  margin: 0px 10px;
-  text-align: start;
+.contato,
+.copyright,
+.networks {
+  width: 33.33%;
 }
 .contato > span {
-  margin: 0 5px;
+  text-align: start;
+  font-size: 0.9em;
+  margin: 1px 10px;
 }
-
+.networkList {
+  justify-content: flex-end;
+}
+.networkList li {
+  margin: 0 0.1rem;
+}
+#endereco::before {
+  font-family: fontawesome;
+  content: '\f3c5\00a0';
+}
+#telefone::before {
+  font-family: fontawesome;
+  content: '\f095\00a0';
+}
 #whatsapp::before {
   font-family: fontawesome;
   content: '\f232\00a0';
@@ -48,4 +46,33 @@
 #facebook::before {
   font-family: fontawesome;
   content: '\f082\00a0';
+}
+
+/* =============INICIO MEDIAS RODAPE============= */
+@media (max-width: 992px) {
+  .contato {
+    flex-basis: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .contato,
+  .copyright {
+    font-size: 0.8em !important;
+  }
+  .contato {
+    flex-basis: 180px;
+  }
+}
+@media (max-width: 576px) {
+  .contato,
+  .copyright {
+    font-size: 0.65em !important;
+  }
+  .contato {
+    flex-basis: 155px;
+  }
+}
+@media (min-width: 768px) {
+  .rodape {
+  }
 }

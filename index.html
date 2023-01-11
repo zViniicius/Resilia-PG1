@@ -8,9 +8,13 @@
     <link rel="icon" href="./assets/img/logo.png" />
 
     <!-- stylesheet pseudo-icons  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
-    integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+
     <!-- Stylessheets -->
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
@@ -20,8 +24,12 @@
     <link rel="stylesheet" href="./assets/css/cardapio.css" />
 
     <!-- Jquery import -->
-    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Fontawesome import -->
     <script
       src="https://kit.fontawesome.com/03a0322255.js"
@@ -30,18 +38,30 @@
   </head>
   <body class="corpoHome">
     <header>
-      <div class="menu flex-row">
-        <div class="logo"></div>
-        <div class="linksMenu flex-row">
-          <li class="links active" id="link1"><a href="">Inicio</a></li>
-          <li class="links" id="link2"><a href="./cardapio.html">Cardápio</a></li>
-          <li class="links" id="link3"><a href="./sobre.html">Sobre</a></li>
-          <li class="links" id="link4"><a href="./contato.html">Contato</a></li>
-        </div>
+      <div class="container">
+        <nav class="navBar flex-row">
+          <button class="btn burger" id="btnNav">☰</button>
+          <div class="">
+            <a href="./index.html"
+              ><img
+                id="logoHeader"
+                class="logo"
+                src="./assets/img/logo.png"
+                alt="logo"
+            /></a>
+          </div>
+          <ul class="navLinks flex-row">
+            <li class="active"  id="link1"><a href="#">Inicio</a></li>
+            <li id="link2"><a href="./cardapio.html">Cardápio</a></li>
+            <li id="link3"><a href="./sobre.html">Sobre</a></li>
+            <li id="link4"><a href="./contato.html">Contato</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <body>
     <main>
+
       <div class="corpo container">
         <!-- Carousel - Home-->
         <div class="slider">
@@ -104,32 +124,27 @@
         </div>
       </div>
     </main>
-    <!-- --- -->
-    <footer>
-      <div class="rodape flex-row">
-        <div class="contato">
-          <span><i class="fa-sharp fa-solid fa-location-dot"></i>
-          Rua Santa Maria, 243</span>
-          <span></span><i class="fa-solid fa-phone-volume"></i>
-          (11) 99999-9999</span>
-        </div>
-        <div class="copyright">
-          <p>Copyright © <span id="copyAno">-</span> AustBurger Inc</p>
-          <span id="copyrightFrase">Todos os direitos reservados</span>
-        </div>
-        <div class="redesSociais">
-          <span class="facebook"
-            ><a href="" id="2"><i class="fa-brands fa-facebook"></i></a
-          ></span>
-          <span class="instagram"
-            ><a href="" id="1"><i class="fa-brands fa-instagram"></i></a
-          ></span>
-          <span class="whatsapp"
-            ><a href="" id="1"><i class="fa-brands fa-whatsapp"></i></a
-          ></span>
-        </div>
-      </div>
-    </footer>
+<footer>
+  <div class="container flex-row">
+    <div class="contato flex-column">
+      <span id="endereco">Rua Santa Maria, 243</span>
+      <span id="telefone">(11) 99999-9999</span>
+    </div>
+    <div class="copyright">
+    <h5>© <span id="copyAno">-</span> AustBurger Inc</h3>
+    <h6>Todos os direitos reservados</h6>
+    </div>
+    <div class="networks">
+      <ul class="networkList flex-row">
+          <li id="whatsapp"></li>
+          <li id="instagram"></li>
+          <li id="facebook"></li>
+        
+      </ul>
+    </div>
+  </div>
+</footer>
+
     <!-- Global JS -->
     <script src="./assets/js/global.js"></script>
   </body>

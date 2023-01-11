@@ -1,29 +1,10 @@
-.aside {
-  width: 350px;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  transform: translateX(100%);
-  transition: all 0.5s ease;
-  padding: 0 16px;
-  color: white;
-  background-color: var(--bg-color-header);
-}
-.open {
-  transform: translateX(0);
-}
-.close {
-  transform: translateX(100%);
-}
-
-.aside-content {
-  margin: 100px 0;
-  width: 100%;
+main {
+  transition: margin-right 1s, filter 0.5s;
 }
 .line {
-  padding: 10px 0;
+  padding: 5px 0;
   position: relative;
-  margin: 10px 0;
+  margin: 5px;
 }
 .line::before {
   content: '';
@@ -34,60 +15,66 @@
   left: 0px;
   background-color: rgb(37, 0, 0);
 }
-.infoPriceCart {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-}
 
-.controlsCart {
+/* =============CONTAINER CARRINHO============= */
+.cart {
   color: var(--font-color-title);
-  padding: 5px;
-  margin: 0 5px;
-  border-radius: 5px;
-  background-color: #450404;
-  width: 100px;
-  text-align: center;
-  box-shadow: inset 2px 2px 3px 1px #2e0000;
-}
-.controlsCart > button {
-  margin: 0 2px;
-}
-
-.cartHeader {
-  display: flex;
-  justify-content: space-between;
-}
-.cartHeader > .closebtnCart,
-.cartTitle {
-  font-size: 2em;
-}
-.cartHeader > .closebtnCart {
-  cursor: pointer;
-  margin: 0 10px;
-}
-.btn.cart {
-  background-color: transparent;
-}
-.btn.cart:hover {
-  background: transparent;
-}
-
-#cartQtd {
-  font-size: 1em;
-  color: var(--font-color-title);
-  background: transparent;
-  text-align: center;
-  width: 20px;
-  border: none;
-}
-
-#opencart {
-  fill: #fff;
-  font-size: 3em;
-  top: 100px;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
   right: 0;
+  background-color: #350303;
+  transition: 0.5s;
+  padding-top: 100px;
+}
+/* =============CABEÇALHO CARRINHO============= */
+.cartHeader {
+  margin: 0 15px;
+  font-size: 1.3em;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+}
+
+#openCart {
+  cursor: pointer;
   position: absolute;
-  margin-right: 30px;
+  top: 100px;
+  right: 10px;
+  font-size: 2em;
+  color: var(--font-color-body)
+}
+
+/* =============ESMAECER BACKGROUND============= */
+.backdrop {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: fixed;
+  z-index: -1;
+  transition: 1s;
+  opacity: 0;
+}
+.controlsCart {
+  float: right;
+}
+.itemList {
+  padding: 0 15px;
+}
+.btnQtd {
+  cursor: pointer;
+}
+#cartQtd {
+  border-radius: 5px;
+  width: 30px;
+  text-align: center;
+}
+input[type='number' i] {
+  padding: 1px 2px;
+}
+
+.itemList li * {
+  margin: 5px 0;
 }
