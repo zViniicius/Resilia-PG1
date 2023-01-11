@@ -357,7 +357,7 @@ main > .containerHome1 a{
   height: 25em;
   align-items: center;
 }
-.formulario{
+.formulariocont{
   box-shadow:0px 10px 20px 0px rgba(134, 122, 122, 0.7) ;
   flex-direction: column;
   display: flex;
@@ -374,14 +374,20 @@ main > .containerHome1 a{
   color:#600A0A;
 
 }
-#nome, #email, #texto{
+#nomecont, #emailcont, #textocont{
+  border: 2px solid;
+  flex-direction: column; 
+
   border-color: #E5E0D4;
   background-color: #B7B3A1;
   border-radius: 5px;
   width: 300px;
   height: 35px;
   display: flex;
-  flex-direction: column;  
+}
+#formnome, #emailform, #formtexto{
+
+  display: flex;
 }
 button{
   display: flex;
