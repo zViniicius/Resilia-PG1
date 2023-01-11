@@ -9,15 +9,12 @@ $(document).ready(async () => {
     // Template of Card-product ready
     $('.cardList').append(`<div class="card flex-column">
   <div class="card-body flex-column">
-  <img src="${prod.img}" alt="${prod.produto}">
+  <img class=img-prod src="${prod.img}" alt="${prod.produto}">
     <h2>${prod.produto}</h2>
     <p class="card-text">${prod.descricao}</p>
-  </div>
+  </img>
   <div class="card-footer"><p>R$${prod.preco}</p>
-    <button href="#" class="btn cart-add"><i class="bi bi-cart-check"></i>Comprar</button></div>
+    <button href="#" id="addCart" product=${prod.produto} price=${prod.preco} class="btn cart-add"><i class="bi bi-cart-check"></i>Comprar</button></div>
 </div>`);
   }
 });
-
-
-

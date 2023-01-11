@@ -4,51 +4,43 @@
 /* =============INICIO CORPO SOBRE============= */
 /* Primeira parte Quem Somos - Textos */
 .text {
-  display: flex;
   align-items: center;
-  justify-content: center;
   font-family: Rambla, sans-serif;
-  color: var(--font-color);
+  justify-content: center;
+  color: black;
 }
-.text h1 {
-  color: #2c2c2c;
-  font-size: 2.5em;
-  padding: 0 auto;
-}
+
 #title {
   color: #2c2c2c;
-  font-size: 2.5em;
-  padding: 0 auto;
-  margin-top: 80px;
 }
-.paragrafos {
+
+.paragrafos > p {
+  padding: 10px;
   font-size: 1.5em;
-  margin: 30px 0px 30px 0px;
-  padding: 15px;
-  width: 690px;
 }
 
 /* Segunda parte Quem Somos - Equipe */
-main > .container > .text > .equipe {
-  width: 50%;
+
+.equipe {
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
 }
 
-#CEO {
-  display: flex;
-  flex-direction: column;
+.CEO,
+.employeesList {
   justify-content: center;
   align-items: center;
+  font-size: 1.5em;
 }
-#CEO > .nome {
-  color: var(--font-color-body);
-}
+
 .tamanhoImg {
   margin-top: 20px;
-  width: 200px;
+  width: 20vw;
 }
 .employees {
-  display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
 }
 .dadosEmployees {
   display: flex;
@@ -57,33 +49,12 @@ main > .container > .text > .equipe {
   margin-top: 15px;
   margin-bottom: 30px;
 }
-.dadosEmployees > .nome {
+.employeeTitle {
   color: var(--font-color-body);
 }
-.dadosEmployees p,
-#CEO p {
-  font-size: 1.5em;
-}
-/* =============FIM CORPO SOBRE============= */
 
-/* Texto central home */
-header {
-  position: absolute;
-  top: 0;
-  width: -webkit-fill-available;
-}
-main {
-  text-align: center;
-}
-main .container {
-  width: 100%;
-  padding-left: 15%;
-  padding-right: 15%;
-}
-a {
-  text-decoration: none;
-  color: #fff;
-}
+/* =============INICIO CORPO============= */
+
 .text {
   flex-direction: column;
   justify-content: center;
@@ -91,7 +62,7 @@ a {
   height: 100%;
   width: 100%;
 }
-main > .container {
+.sobre {
   flex-direction: row;
   display: flex;
   align-items: center;
@@ -105,24 +76,9 @@ main > .container {
   font-weight: bold;
   line-height: 80%;
 }
-
 .sub {
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-main > .container .icon {
-  width: 30px;
-  height: 30px;
-}
-
-main > .container a {
-  height: 60%;
-  width: 60%;
-  margin-top: 5px;
-  background-color: #600a0a;
-  border-radius: 5px;
-  padding: 10px;
 }
 
 /* =============INICIO CORPO CARDÁPIO============= */
@@ -131,7 +87,7 @@ main > .container a {
   justify-content: space-around;
 }
 .card {
-  width: 18rem;
+  width: 30%;
   background: #e6e0d4;
   box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);
   border-radius: 10px;
@@ -142,21 +98,54 @@ main > .container a {
   margin: 15px 0;
 }
 .card-body {
-  margin-top: 10px;
-  width: 16rem;
+  margin: 10px;
 }
 .card-footer {
   margin: 10px 0;
-  width: 16rem;
+  width: 100%;
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
+.img-prod {
+  align-self: center;
+  width: 20vw;
+}
 .card-footer > p {
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
-/* =============FIM CORPO CARDÁPIO============= */
+
+/* =============INICIO MEDIAS CORPO============= */
+@media (max-width: 992px) {
+  .card {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    font-size: 0.6em;
+  }
+  .employeesList {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 576px) {
+  .card {
+    font-size: 0.8em;
+    width: 100%;
+  }
+  .cardList {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .img-prod {
+    width: 60vw;
+  }
+  .employeesList,
+  .paragrafos > p {
+    font-size: 1em;
+  }
+}

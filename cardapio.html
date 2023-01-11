@@ -54,14 +54,14 @@
           </div>
           <ul class="navLinks flex-row">
             <li id="link1"><a href="./index.html">Inicio</a></li>
-            <li id="link2"><a href="#">Cardápio</a></li>
+            <li class="active" id="link2"><a href="#">Cardápio</a></li>
             <li id="link3"><a href="./sobre.html">Sobre</a></li>
             <li id="link4"><a href="./contato.html">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
- <aside>
+ <!-- <aside>
   <div >
 
     <button onclick="opencart()"><i id="opencart" class="fa-solid fa-cart-shopping"></i></button>
@@ -72,25 +72,32 @@
             
             <div class="line"></div>
             <div class="cartItens">
-              <ul>
-                <li id="item1"><h3>AustPicanha</h3>
-                <span class="infoPriceCart">R$39,30
-                <span class="controlsCart">
-                  <button id="btnQtd-" onclick="downQtd()"class="btn remove cart"></button><input type="number" name="" value="1" id="cartQtd"> 
-                  <button id="btnQtd+" onclick="upQtd()" class="btn add cart"></span>
-                  </li>
-                  <div class="line"></div>
-                <li id="item2"></li>
+              <ul id="CartList">
+              
+               
               </ul>
             </div>
             </div>
           </div>
-        </aside>
+        </aside> -->
     <!-- Main content page -->
-    <main>
-     
-      <div class="corpo">
+    <span id="openCart" class="toggleCart"><i class="toggleCart fa-solid fa-cart-shopping"></i></span>
+<aside class="container">
+  <div class="cart" aria-expanded="false">
+    <div class="cartHeader flex-row">
+      <span id="titleCart"><i class="fa-solid fa-cart-shopping"></i> CARRINHO</span>
+      <a class="toggleCart" href="javascript:void(0)"><i class="fa-solid fa-xmark closebtnCart"></i></a>
+    </div>
+    <div class="cartBody">
+      <ul class="itemList flex-column">
         
+      </ul>
+  </div>
+
+</aside>
+<div class="backdrop"></div>
+    <main>
+      <div class="container corpo">
        <div class="cardList flex-row"></div>
       </div>
     </main>
@@ -120,9 +127,10 @@
 
     <!-- Global JS -->
     <script src="/assets/js/global.js"></script>
+    <script src="/assets/js/cart.js"></script>
     <!-- Module to generate card-products into 'cardapio' page -->
     <script type="module" src="/assets/js/cardapio.js"></script>
-    <script src="/assets/js/cart.js"></script>
+    
   </body>
 </html>
 

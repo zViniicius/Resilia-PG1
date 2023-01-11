@@ -24,6 +24,10 @@
   font-family: fontAwesome;
   content: '\f0d1\00a0';
 }
+.sent::before {
+  font-family: fontAwesome;
+  content: '\f2f6\00a0';
+}
 .pay::before {
   font-family: fontAwesome;
   content: '\f4c0\00a0';

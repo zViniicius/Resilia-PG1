@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
 
-/* Variáveis CSS */
+/* =============VARIAVEIS CSS============= */
 :root {
   /* Primary colors */
   --black: #000;
@@ -23,14 +23,26 @@
   --font-color-title: #f5f5f5;
   --font-color-body: #600a0a;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
-/* Elementos Globais */
+input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
+}
+/* =============TAGS GLOBAIS============= */
 * {
   list-style-type: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  border: none;
+  outline: none;
 }
 html,
 body {
@@ -44,11 +56,16 @@ body {
   background-color: var(--bg-color-main);
   font-size: 12pt;
   overflow-x: hidden;
+  transition: 2s;
 }
 a {
   text-decoration: none;
   color: var(--font-color-title);
 }
+main {
+  text-align: center;
+}
+/* =============CLASSES GLOBAIS============= */
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -58,17 +75,16 @@ a {
   flex-direction: column;
 }
 .container {
+  text-align: justify;
   width: 100%;
-  padding: 0 auto;
   margin-right: auto;
   margin-left: auto;
 }
 .corpo {
-  text-align: justify;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 90px 0;
+  padding: 120px 50px;
 }
+
+/* =============MEDIAS GLOBAIS============= */
 @media (max-width: 992px) {
   .container {
     max-width: 960px;
