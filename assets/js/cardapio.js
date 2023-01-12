@@ -9,6 +9,9 @@ $(document).ready(async () => {
   
   for (let prod of productList) {
 
+    //toFixed for price
+    prod.preco = prod.preco.toFixed(2);
+
     // Template of Card-product ready
     $('.cardList').append(`<div class="card flex-column">
   <div class="card-body flex-column">
