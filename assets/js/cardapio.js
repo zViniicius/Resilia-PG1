@@ -5,7 +5,7 @@ $(document).ready(async () => {
   let productList = Object.values(products);
 
   // Product list interaction to generate each product card
-
+  productList = productList.reverse()
   for (let prod of productList) {
     // Template of Card-product ready
     $('.cardList').append(`<div class="card flex-column">
