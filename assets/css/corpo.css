@@ -156,8 +156,6 @@ main > .buttonHome {
 
 .manual-nav {
   position: relative;
-  width: 1150px;
-  /* ================================================= */
   margin-top: -25px;
   display: flex;
   justify-content: center;
