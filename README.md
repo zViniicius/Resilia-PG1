@@ -3,13 +3,13 @@
 ![Badge Concluído](http://img.shields.io/static/v1?label=STATUS&message=CONCLUÍDO&color=GREEN&style=for-the-badge)
 
 Este é um projeto em grupo realizado pelo squad Wolf do curso da Resilia de Webdev RD. O objetivo é um site comercial criado para um microempreendedor, ajudando na divulgação do seu negócio.
-
+<div>
 ## :wrench:  Como executar:
 Aqui você encontra nosso site e suas funcionalidades:
 :link:  zviniicius.github.io/Resilia-PG1/
 Nosso site:
 :link:  https://github.com/zViniicius/Resilia-PG1/wiki/Di%C3%A1rio-de-Bordo
-
+</div>
 ## :computer: Tecnologias utilizadas:
 <div>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40" />
