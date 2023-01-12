@@ -242,7 +242,9 @@ main > .containerHome1 a {
   margin: 15px 0;
 }
 .card-body {
+  height: 100%;
   margin: 10px;
+  justify-content: space-between;
 }
 .card-footer {
   margin: 10px 0;
