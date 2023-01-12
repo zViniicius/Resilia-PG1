@@ -4,7 +4,7 @@
 $(function () {
   // array cart to get items positions index
   let cart = [];
-  item = 1;
+  item = 0;
   window.setTimeout(function () {
     $('.btn.cart-add').click(function (product, price) {
       $('#openCart').css('opacity', 1);

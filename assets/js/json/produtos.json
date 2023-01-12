@@ -63,7 +63,7 @@
     "preco": 35.99
   },
   "10": {
-    "produto": "Batata + Bebida",
+    "produto": "Bebida + Batata",
     "categoria": "Acompanhamento",
     "descricao": "Acompanha 100g de batata frita e um refri geladinho.",
     "img": "./assets/img/produtos/img-cardapio/combo_fritas.png",
@@ -77,7 +77,7 @@
     "preco": 8.89
   },
   "12": {
-    "produto": "Batata Cheddar e Bacon",
+    "produto": "Cheddar e Bacon(Batata) ",
     "categoria": "Acompanhamento",
     "descricao": "Deliciosas batatas fritas cobertas com queijo cheddar e bacon.",
     "img": "./assets/img/produtos/img-cardapio/fritas_G.png",
