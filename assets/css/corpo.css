@@ -73,7 +73,7 @@ main {
   align-items: center;
   justify-content: space-between;
   line-height: 110%;
-  font-size: 20px;
+  font-size: 1.7em;
   color: #000;
   text-align: center;
   /* ================================================================ */
@@ -97,9 +97,8 @@ main > .buttonHome {
   align-items: center;
   justify-content: space-between;
   line-height: 90%;
-  font-size: 60px;
+  font-size: 2.5em;
   font-weight: bold;
-  margin-top: 150px;
   font-family: 'Holtwood One SC', serif;
 }
 
@@ -122,11 +121,13 @@ main > .buttonHome {
   padding: 10px;
 }
 
-/* Carousel - CSS */
+/* Carrossel - CSS */
+
+/* Ajustando tamanho do carrossel e limitando o espaço da imagem no tamanho do pai. */
 
 .slider {
   margin: 0 auto;
-  width: 100%;
+  width: 800px;
   height: 400px;
   overflow: hidden;
 }
@@ -144,10 +145,7 @@ main > .buttonHome {
 .slide {
   width: 25%;
   position: relative;
-  display: flex;
-    align-items: center;
-    justify-content: center;
-    /* =============================================================== */
+  transition: 2s;
 }
 
 .slide img {
@@ -198,7 +196,7 @@ main > .buttonHome {
 .containerHome2 {
   text-align: center;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 1.25em;
   font-family: 'Prociono', serif;
   padding-top: 10%;
   color: #000;
@@ -210,7 +208,7 @@ main > .buttonHome {
 
 .fraseHome2 {
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 100%;
   letter-spacing: 2px;
   font-size: 60px;
