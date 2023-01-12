@@ -371,10 +371,10 @@ main > .containerHome1 a{
 }
 #titulo{
   display: flex;
-  color:#600A0A;
 
 }
 #nomecont, #emailcont, #textocont{
+  color:rgb(115, 24, 24);
   border: 2px solid;
   flex-direction: column; 
   border-color: #E5E0D4;
@@ -388,6 +388,21 @@ main > .containerHome1 a{
   display: flex;
 
 }
+form input[type=texto],
+form input[type=email]
+{
+  padding-left: 10px;
+}
+form label[type=texto]{
+  padding-left: 10px;
+}
+textarea{
+  padding-left: 10px;
+  padding-top: 5px;
+
+}
+
+
 
 button{
   display: flex;

@@ -97,15 +97,15 @@
                 <form action=”./formulario-contato” method=”post”>
                     <div>
                         <label for="nome" id="formnome">Nome</label>
-                        <input type="texto" id="nomecont" name="nome_usuario" required>
+                        <input type="texto" id="nomecont" name="nome_usuario" placeholder="Seu nome" required maxlength="25" minlength="2">
                     </div>
                     <div>
                         <label for="email" id="emailform">E-mail</label>
-                        <input type="email" id="emailcont" name="email_usuario"required>
+                        <input type="email" id="emailcont" name="email_usuario" required maxlength="30" placeholder="Seu e-mail">
                     </div>
                     <div>
                         <label for="texto" id="formtexto">Mensagem</label>
-                        <textarea id="textocont" name="texto_usuario"required></textarea>
+                        <textarea id="textocont" name="texto_usuario" required maxlength="100" placeholder="Digite aqui uma mensagem"></textarea>
                     </div>
                     <div>
                         <button class="btn sent" id="btnSend" type="submit">Enviar</button>
