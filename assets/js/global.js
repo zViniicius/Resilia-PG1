@@ -1,4 +1,3 @@
-
 $(() => {
   //Automatic update tag <title> in <head>
   {
@@ -17,14 +16,12 @@ $(() => {
   }
 });
 
-
 /* =============INICIO JS HEADER============= */
 
 $('#btnNav').on('click', () => {
   let btnNav = $('#btnNav');
   let navBar = $('.navBar'),
     navBH = navBar.height();
-
 
   navBar.toggleClass('show'); //Add .show class to navBar // Adicione a classe .show no elemento NavBar
   btnNav.toggleClass('open'); //Add .open class to navBar // Adicione a classe .open no elemento NavBar
@@ -51,9 +48,9 @@ $('.toggleCart').on('click', e => {
     $('.cart').css('width', '250px');
     $('main').css({ 'margin-right': '250px', filter: 'blur(4px)' });
     $('.backdrop').css({
-      'z-index': '-1',
       opacity: '1',
       background: 'rgba(17, 17, 17, 0.76)',
+      'z-index': '1',
     });
     $('.cart').attr('aria-expanded', 'true');
   } else {
@@ -69,3 +66,6 @@ $('.toggleCart').on('click', e => {
   }
 });
 
+$('.backdrop').on('click', () => {
+  $('.toggleCart').click();
+});

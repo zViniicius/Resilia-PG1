@@ -25,7 +25,7 @@
     "categoria": "Burger",
     "descricao": "Dois hamburgueres da casa 90g, cebola roxa, bacon, delicioso molho cheddar e pão australiano.",
     "img": "./assets/img/produtos/img-cardapio/austOriginal.png",
-    "preco": 42.90
+    "preco": 42.89
   },
   "05": {
     "produto": "AustChicken",
@@ -46,41 +46,41 @@
     "categoria": "Acompanhamento",
     "descricao": "Acompanha 100g de batata frita e um refri geladinho.",
     "img": "./assets/img/produtos/img-cardapio/combo_fritas.png",
-    "preco": 14.90
+    "preco": 14.89
   },
   "08": {
     "produto": "Batata Média",
     "categoria": "Acompanhamento",
     "descricao": "Acompanha 150g de batata frita.",
     "img": "./assets/img/produtos/img-cardapio/fritas_M.png",
-    "preco": 8.90
+    "preco": 8.89
   },
   "09": {
     "produto": "Batata Cheddar e Bacon",
     "categoria": "Acompanhamento",
     "descricao": "Deliciosas batatas fritas cobertas com queijo cheddar e bacon.",
     "img": "./assets/img/produtos/img-cardapio/fritas_G.png",
-    "preco": 19.90
+    "preco": 19.89
   },
   "10": {
     "produto": "Suco de Frutas Natural",
     "categoria": "Bebida",
     "descricao": "Temos suco de laranja, abacaxi com hortelã, manga e maracujá.",
     "img": "./assets/img/produtos/img-cardapio/suco.png",
-    "preco": 7.90
+    "preco": 7.89
   },
   "11": {
     "produto": "Refrigerantes",
     "categoria": "Bebida",
     "descricao": "Temos Coca-Cola, Guaraná, Fanta Laranja e Fanta Uva.",
     "img": "./assets/img/produtos/img-cardapio/refri.png",
-    "preco": 9.90
+    "preco": 9.89
   },
   "12": {
     "produto": "Água",
     "categoria": "Bebida",
     "descricao": "500ml.",
     "img": "./assets/img/produtos/img-cardapio/agua.png",
-    "preco": 3.90
+    "preco": 3.89
   }
 }

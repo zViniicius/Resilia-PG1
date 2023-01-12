@@ -53,7 +53,6 @@
   color: var(--font-color-body);
 }
 
-
 /* ============= Home ================= */
 
 /* Texto central home */
@@ -67,16 +66,15 @@ main {
   text-align: center;
 }
 
-.containerHome1{
+.containerHome1 {
   flex-direction: row;
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   line-height: 110%;
   font-size: 20px;
   color: #000;
   display: flex;
-
 }
 
 main > .buttonHome {
@@ -84,8 +82,7 @@ main > .buttonHome {
   color: #fff;
 }
 
-.textHome{
-
+.textHome {
   flex-direction: column;
   justify-content: center;
   color: black;
@@ -93,11 +90,10 @@ main > .buttonHome {
   width: 100%;
 }
 
-
-.titleHome{
+.titleHome {
   flex-direction: row;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   line-height: 90%;
   font-size: 60px;
   font-weight: bold;
@@ -105,17 +101,17 @@ main > .buttonHome {
   font-family: 'Holtwood One SC', serif;
 }
 
-.subHome{
+.subHome {
   padding-top: 10px;
   padding-bottom: 30px;
 }
 
-main > .containerHome1 .iconHome{
+main > .containerHome1 .iconHome {
   width: 30px;
   height: 30px;
 }
 
-main > .containerHome1 a{
+main > .containerHome1 a {
   height: 60%;
   width: 60%;
   margin-top: 5px;
@@ -137,7 +133,6 @@ main > .containerHome1 a{
   width: 400%;
   height: 400px;
   display: flex;
-  
 }
 
 .slides input {
@@ -162,7 +157,7 @@ main > .containerHome1 a{
 }
 
 .manual-btn {
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -175,7 +170,7 @@ main > .containerHome1 a{
 }
 
 .manual-btn:hover {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 #radio1:checked ~ .first {
@@ -191,25 +186,24 @@ main > .containerHome1 a{
 }
 
 #radio1:checked ~ .auto-nav .auto-btn1 {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 /* Título imagens interior */
-.containerHome2{
+.containerHome2 {
   text-align: center;
   justify-content: space-around;
   font-size: 20px;
   font-family: 'Prociono', serif;
   padding-top: 10%;
   color: #000;
-
 }
 
-.fraseHome1{
+.fraseHome1 {
   font-size: 25px;
 }
 
-.fraseHome2{
+.fraseHome2 {
   font-weight: lighter;
   font-size: 20px;
   line-height: 100%;
@@ -217,7 +211,7 @@ main > .containerHome1 a{
   font-size: 60px;
 }
 
-.imgintHome{
+.imgintHome {
   flex-direction: row;
   align-items: center;
   display: flex;
@@ -226,11 +220,10 @@ main > .containerHome1 a{
   margin-top: 80px;
 }
 
-.imgintHome img{
+.imgintHome img {
   width: 90%;
   height: 90%;
 }
-
 
 /* =============INICIO CORPO CARDÁPIO============= */
 .cardList {
@@ -268,8 +261,6 @@ main > .containerHome1 a{
   font-weight: bold;
 }
 
-
-
 /* =============INICIO MEDIAS CORPO============= */
 @media (max-width: 992px) {
   .card {
@@ -305,32 +296,29 @@ main > .containerHome1 a{
 /* =============FIM CORPO CARDÁPIO============= */
 /* =============INICIO CORPO CONTATO============= */
 
- /* Cofigurações da página contato */
+/* Cofigurações da página contato */
 /* Cofigurações da pagina contato */
-.corpo-left, .corpo-right{
+.corpo-left,
+.corpo-right {
   display: flex;
   justify-content: center;
-  
-  
 }
-.corpo-left{
+.corpo-left {
   margin-top: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 50%;
-  
 }
-.corpo-right{
+.corpo-right {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50%;
 }
 
-
-#horario, #telefone{
+#horariocontato, #telefonecontato{
   color:#600A0A;
   align-items: center;
   flex-direction: column;
@@ -340,13 +328,13 @@ main > .containerHome1 a{
   margin-top: 10px;
   margin-bottom: 10px;
 
-}
-.contato{
+} 
+.contatopage{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.localcontato{
+.localcontatopage{
   display: flex;
   color:#600A0A;
   flex-direction: column;
@@ -402,17 +390,14 @@ textarea{
 
 }
 
-
-
-button{
+#buttonpage{
   display: flex;
   background-color: #600A0A;
   color: white;
-  margin-top: 5px;
+  margin-top: 5px; 
 
 }
-
-.icssonsite{
+.icssonsitecontato{
   display: flex;
   align-items: flex-end; 
   justify-content: space-evenly;
@@ -420,17 +405,72 @@ button{
   width: 400px;
   height: 100px;
 }
-#instagram{
+
+#instagramcontato{
   height: 40px;
 }
-#facebook{
+#facebookcontato{
   height: 40px;
 }
-#whatsapp{
+#whatsappcontato{
   height: 40px;
+} 
+
+.localcontato {
+  display: flex;
+  color: #600a0a;
+  flex-direction: column;
+  align-items: center;
 }
-adress{
-  display:flex;
+#imgMapa {
+  height: 25em;
+  align-items: center;
+}
+.formulario {
+  box-shadow: 0px 10px 20px 0px rgba(134, 122, 122, 0.7);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  background-color: #e5e0d4;
+  color: #600a0a;
+}
+#titulo {
+  display: flex;
+  color: #600a0a;
+}
+#nome,
+#email,
+#texto {
+  border-color: #e5e0d4;
+  background-color: #b7b3a1;
+  border-radius: 5px;
+  width: 300px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  display: flex;
+  background-color: #600a0a;
+  color: white;
+  margin-top: 5px;
+}
+
+.icssonsite {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+}
+
+.adress {
+  display: flex;
   background-color: #600a0a;
   color: rgb(251, 251, 251);
   margin-top: 20px;
@@ -438,7 +478,6 @@ adress{
   height: 4em;
   justify-content: center;
   align-items: flex-end;
-  
 }
 
 /* =============INICIO CORPO CONTATO============= */
