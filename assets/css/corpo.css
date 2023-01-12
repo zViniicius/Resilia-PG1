@@ -64,6 +64,7 @@ header {
 
 main {
   text-align: center;
+
 }
 
 .containerHome1 {
@@ -74,7 +75,8 @@ main {
   line-height: 110%;
   font-size: 20px;
   color: #000;
-  display: flex;
+  text-align: center;
+  /* ================================================================ */
 }
 
 main > .buttonHome {
@@ -105,13 +107,13 @@ main > .buttonHome {
   padding-top: 10px;
   padding-bottom: 30px;
 }
-
-main > .containerHome1 .iconHome {
+/* ==================================================================== */
+.containerHome1 .iconHome { 
   width: 30px;
   height: 30px;
 }
-
-main > .containerHome1 a {
+/* ==================================================================== */
+.containerHome1 a {
   height: 60%;
   width: 60%;
   margin-top: 5px;
@@ -142,6 +144,10 @@ main > .containerHome1 a {
 .slide {
   width: 25%;
   position: relative;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    /* =============================================================== */
 }
 
 .slide img {
@@ -149,8 +155,9 @@ main > .containerHome1 a {
 }
 
 .manual-nav {
-  position: absolute;
-  width: 800px;
+  position: relative;
+  width: 1150px;
+  /* ================================================= */
   margin-top: -25px;
   display: flex;
   justify-content: center;
