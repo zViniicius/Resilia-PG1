@@ -69,3 +69,72 @@ $('.toggleCart').on('click', e => {
 $('.backdrop').on('click', () => {
   $('.toggleCart').click();
 });
+
+// ================= inicio js contato ====================>
+// const campos = document.querySelectorAll('.forminput');
+// const regexEmail = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/;
+// function nomeValidate() {
+//   if (campos[0].value.length < 3) {
+//     setError(0);
+//   } else {
+//     removeError(0);
+//   }
+// }
+// function emailValidade() {
+//   if (emailRegex.test(campos[1].value)) {
+//     console.log('e-mail valido');
+//   } else {
+//     console.log('e-mail invalido');
+//   }
+// }
+
+function valideInputs() {
+  const regexEmail = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/;
+  let inputName = document.querySelector('#nome').value.trim();
+  let inputEmail = document.querySelector('#email').value;
+  let inputMsg = document.querySelector('#msg').value.trim();
+
+  //Verifica se o nome é tem mais que 2 caracteres
+  if (inputName.length > 2) {
+    estilizar('sucess', '#nome'); // Estiliza o input com verde
+    
+    //Verifica se é um email valido
+    if (regexEmail.test(inputEmail)) {
+      estilizar('sucess', '#email'); // Estiliza o input com verde
+
+      //Verifica se a msg tem mais que 2 caracteres
+      if (inputMsg.length > 2) {
+        estilizar('sucess', '#msg'); // Estiliza o input com verde
+      } else {
+        estilizar('error', '#msg', 'Mensagem invalida'); // Estiliza o input com vermelho
+      }
+    } else {
+      estilizar('error', '#email', 'E-mail invalido'); //Estiliza o input com vermelho
+    }
+  } else {
+    estilizar('error', '#nome', 'Nome Inválido'); //Estiliza o input com vermelho
+  }
+}
+
+function estilizar(state = error, el, msg) {
+  Input = document.querySelector(el); // Pega o elemento passado anteriormente
+  msgVerificacao = document.querySelector(el).nextElementSibling; // Seleciona o proximo elemento mais proximo
+
+  //se o state == error, estiliza o input com vermelho
+  if (state == 'error') {
+    Input.classList.remove('inputSucess');
+    Input.classList.add('inputError');
+
+    msgVerificacao.classList.add('error-i');
+    msgVerificacao.innerHTML = msg;
+
+    //se o state == error, estiliza o input com verde
+  } else if (state == 'sucess') {
+    Input.classList.remove('inputError');
+    Input.classList.add('inputSucess');
+
+    msgVerificacao.classList.remove('error-i');
+    msgVerificacao.innerHTML = '';
+  }
+}
+// ================= fim js contato ====================>

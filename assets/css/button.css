@@ -22,8 +22,7 @@
 }
 .send::before {
   font-family: fontAwesome;
-  content:
-   '\f0d1\00a0';
+  content: '\f0d1\00a0';
 }
 .sent::before {
   font-family: fontAwesome;
@@ -36,6 +35,15 @@
 .pay::before {
   font-family: fontAwesome;
   content: '\f4c0\00a0';
+}
+
+.check-circle::before {
+  font-family: fontAwesome;
+  content: '\f058\00a0';
+}
+.error-i::before {
+  font-family: fontAwesome;
+  content: '\f57a\00a0';
 }
 
 .btn {
