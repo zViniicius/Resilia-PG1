@@ -377,7 +377,6 @@ main > .containerHome1 a{
 #nomecont, #emailcont, #textocont{
   border: 2px solid;
   flex-direction: column; 
-
   border-color: #E5E0D4;
   background-color: #B7B3A1;
   border-radius: 5px;
@@ -386,9 +385,10 @@ main > .containerHome1 a{
   display: flex;
 }
 #formnome, #emailform, #formtexto{
-
   display: flex;
+
 }
+
 button{
   display: flex;
   background-color: #600A0A;
