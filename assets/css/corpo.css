@@ -88,7 +88,7 @@ main > .buttonHome {
   align-items: center;
   justify-content: space-between;
   line-height: 90%;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
   font-family: 'Holtwood One SC', serif;
   transition: 1s;
@@ -124,13 +124,14 @@ main > .buttonHome {
   background-repeat: no-repeat;
   background-size: cover;
   transition: 1s;
+  border-radius: 15px;
+  box-shadow: inset 7px 7px 26px 13px #000;
 }
-.bannerFixo > p,
-span {
+.bannerFixo > div {
   position: relative;
-  top: 20px;
+  top: 10px;
 }
-.bannerFixo > p {
+.bannerFixo > div > p {
   font-weight: bold;
 }
 /* Carrossel - CSS */
@@ -222,7 +223,7 @@ span {
   justify-content: space-around;
   font-size: 1.25em;
   font-family: 'Prociono', serif;
-  padding-top: 10%;
+  padding-top: 50px;
   color: #000;
 }
 /* ----------Primeira linha texto interior------- */
@@ -239,17 +240,31 @@ span {
 }
 /* -------------Imagens interior------------ */
 .imgintHome {
-  flex-direction: row;
+  width: 100%;
   align-items: center;
-  display: flex;
   justify-content: center;
-  margin-bottom: 160px;
-  margin-top: 80px;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 /* ----------------Tamanho imagens------------- */
-.imgintHome img {
-  width: 90%;
-  height: 90%;
+.imgInt {
+  border-radius: 20px;
+  width: 30vw;
+  transition: 0.5s ease-in-out;
+}
+.imgInt:hover {
+  scale: 1.1;
+}
+.imgintHome:hover :not(:hover) {
+  opacity: 0.3;
+}
+.textint {
+  font-family: Rambla, sans-serif;
+  font-size: 1.5em;
+}
+.textint span {
+  font-size: 2em;
+  font-weight: bold;
 }
 
 /* =============INICIO CORPO CARDÁPIO============= */
@@ -267,7 +282,13 @@ span {
   padding: 10px;
   color: #600a0a;
   margin: 15px 0;
+  transition: 0.5s ease-in-out;
 }
+
+.card:hover {
+  scale: 1.1;
+}
+
 .card-body {
   height: 100%;
   margin: 10px;
@@ -377,9 +398,16 @@ textarea {
 
 /* =============INICIO MEDIAS CORPO============= */
 @media (max-width: 992px) {
-  .containerHome1 {
-    flex-direction: column;
-    font-size: 2em;
+  .bannerFixo {
+    display: block;
+    height: 50vw;
+    font-size: 4vw;
+  }
+  .slider {
+    display: none;
+  }
+  .banner {
+    height: 70vw;
   }
   .card {
     font-size: 0.8em;
@@ -389,6 +417,7 @@ textarea {
   .bannerFixo {
     display: block;
     height: 50vw;
+    font-size: 4vw;
   }
   .slider {
     display: none;
@@ -397,8 +426,13 @@ textarea {
     height: 70vw;
   }
   .containerHome1 {
+    font-size: 1em;
+  }
+  .imgintHome {
     flex-direction: column;
-    font-size: 2em;
+  }
+  .imgInt {
+    width: 60vw;
   }
   .card {
     font-size: 0.6em;
@@ -419,7 +453,7 @@ textarea {
 @media (max-width: 576px) {
   .bannerFixo {
     display: block;
-    font-size: 0.8em;
+    font-size: 3vw;
   }
   .slider {
     display: none;
@@ -427,8 +461,15 @@ textarea {
   .banner {
     height: 80vw;
   }
+  .imgintHome {
+    flex-direction: column;
+  }
+  .textint {
+    font-size: 5vw;
+  }
 
-  .containerHome1 {
+  .containerHome1,
+  .containerHome2 {
     flex-direction: column;
     font-size: 1em;
   }
