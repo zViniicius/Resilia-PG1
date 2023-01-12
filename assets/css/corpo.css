@@ -121,7 +121,7 @@ main > .buttonHome {
 
 /* Carrossel - CSS */
 
-/* Ajustando tamanho do carrossel e limitando o espaço da imagem no tamanho do pai. */
+/* Ajustando tamanho do carrossel e limitando o espaço da imagem em relação ao tamanho do container carrossel. */
 
 .slider {
   margin: 0 auto;
@@ -130,15 +130,21 @@ main > .buttonHome {
   overflow: hidden;
 }
 
+/* Ajustando tamanho dos slides do carrossel */
+
 .slides {
   width: 400%;
   height: 400px;
   display: flex;
 }
 
+/* Escondendo os inputs */
+
 .slides input {
   display: none;
 }
+
+/* Posição de cada slide */
 
 .slide {
   width: 25%;
@@ -146,9 +152,13 @@ main > .buttonHome {
   transition: 2s;
 }
 
+/* Ajustando tamanho da imagem dentro do container carrossel */
+
 .slide img {
-  width: 800px;
+  width: 100%;
 }
+
+/* Posições dos botões do carrossel */
 
 .manual-nav {
   position: relative;
@@ -157,12 +167,14 @@ main > .buttonHome {
   justify-content: center;
 }
 
+/* Estilização dos botões do carrossel */
+
 .manual-btn {
   border: 1px solid #fff;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 /* Margem para todos os botoes, menos o ultimo */
@@ -170,9 +182,13 @@ main > .buttonHome {
   margin-right: 40px;
 }
 
+/* Estilização dos botões do carrossel quando o mouse passa por cima */
+
 .manual-btn:hover {
   background-color: #fff;
 }
+
+/* Dinamismo com CSS - Quando o input estiver selecionado irá mover a imagem X % de posição p/ esquerda  */
 
 #radio1:checked ~ .first {
   margin-left: 0;
@@ -184,10 +200,6 @@ main > .buttonHome {
 
 #radio3:checked ~ .first {
   margin-left: -50%;
-}
-
-#radio1:checked ~ .auto-nav .auto-btn1 {
-  background-color: #fff;
 }
 
 /*----------- Título imagens interior-------------- */
