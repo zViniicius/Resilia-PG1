@@ -55,34 +55,33 @@
 
 /* ============= Home ================= */
 
-/* Texto central home */
 header {
   position: absolute;
   top: 0;
   width: -webkit-fill-available;
 }
 
+/* ------Alinhamento dos itens contidos  em Main --------------- */
 main {
   text-align: center;
 }
-
+/* ---------Atribuições para primeiro bloco de texto ----------- */
 .containerHome1 {
   flex-direction: row;
   display: flex;
   align-items: center;
   justify-content: space-between;
   line-height: 110%;
-  font-size: 20px;
+  font-size: 1.7em;
   color: #000;
   text-align: center;
-  /* ================================================================ */
 }
-
+/* --------Texto nos botões centrais------------ */
 main > .buttonHome {
   text-decoration: none;
   color: #fff;
 }
-
+/* ------------Atriuições para os itens centrais------------ */
 .textHome {
   flex-direction: column;
   justify-content: center;
@@ -90,18 +89,17 @@ main > .buttonHome {
   height: 100%;
   width: 100%;
 }
-
+/* -------------Títuilo textos centrais---------------- */
 .titleHome {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   line-height: 90%;
-  font-size: 60px;
+  font-size: 2.5em;
   font-weight: bold;
-  margin-top: 150px;
   font-family: 'Holtwood One SC', serif;
 }
-
+/* -----------Texto entre os botões centrais e seu título------- */
 .subHome {
   padding-top: 10px;
   padding-bottom: 30px;
@@ -111,7 +109,7 @@ main > .buttonHome {
   width: 30px;
   height: 30px;
 }
-/* ==================================================================== */
+/* ---------------Referente a estilização do botão-------------- */
 .containerHome1 a {
   height: 60%;
   width: 60%;
@@ -121,11 +119,13 @@ main > .buttonHome {
   padding: 10px;
 }
 
-/* Carousel - CSS */
+/* Carrossel - CSS */
+
+/* Ajustando tamanho do carrossel e limitando o espaço da imagem no tamanho do pai. */
 
 .slider {
   margin: 0 auto;
-  width: 100%;
+  width: 800px;
   height: 400px;
   overflow: hidden;
 }
@@ -143,10 +143,7 @@ main > .buttonHome {
 .slide {
   width: 25%;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* =============================================================== */
+  transition: 2s;
 }
 
 .slide img {
@@ -155,8 +152,6 @@ main > .buttonHome {
 
 .manual-nav {
   position: relative;
-  width: 1150px;
-  /* ================================================= */
   margin-top: -25px;
   display: flex;
   justify-content: center;
@@ -195,28 +190,28 @@ main > .buttonHome {
   background-color: #fff;
 }
 
-/* Título imagens interior */
+/*----------- Título imagens interior-------------- */
 .containerHome2 {
   text-align: center;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 1.25em;
   font-family: 'Prociono', serif;
   padding-top: 10%;
   color: #000;
 }
-
+/* ----------Primeira linha texto interior------- */
 .fraseHome1 {
   font-size: 25px;
 }
-
+/* ----------Segunda linha texto interior------- */
 .fraseHome2 {
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 100%;
   letter-spacing: 2px;
   font-size: 60px;
 }
-
+/* -------------Imagens interior------------ */
 .imgintHome {
   flex-direction: row;
   align-items: center;
@@ -225,7 +220,7 @@ main > .buttonHome {
   margin-bottom: 160px;
   margin-top: 80px;
 }
-
+/* ----------------Tamanho imagens------------- */
 .imgintHome img {
   width: 90%;
   height: 90%;
