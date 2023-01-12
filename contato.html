@@ -64,65 +64,48 @@
 
 
   <main>
-
-      <div class="corpoRight"></div>
-    </div>
-
-      <div class="corpo flex-row">
-        <div class="corpo-left">
-          <div class="contatopage">
-            <span id="horariocontato"> 
-              <img id="imgHorario" src="./assets/img/icon-contato/Group.png" width="40px">
-              <h4> TERÇA - DOMINGO: 11H ÀS 22H </h4>   
-             </span> 
-             <span id="telefonecontato">
-              <img src="./assets/img/icon-contato/Vector.png" width="40px">
-                <h4>(11)96700-8890</h4>
-                <h4>(11)99999-9999</h4>
-             </span>
+      <div class="container corpo contatoPage flex-row">
+        <div class="contatoAddress flex-column">
+          <div class="localcontato">
+            <div id="horario"> 
+                
+              <img class="iconContatoAddress" src="./assets/img/icon-contato/Group.png"><h3>HORARIO DE FUNCIONAMENTO</h3>
+                  <div>
+                     
+                    <span> TERÇA - DOMINGO: 11:00 às 22:00 </span> 
+                  </div>  
+              </div>    
+            <img id="imgMapa" src="./assets/img/icon-contato/Mapsicle Map.png">
             </div>
-
-            <div class="localcontatopage">
-              <img id="imgMapa" src="./assets/img/icon-contato/Mapsicle Map.png">
-                  <h4>Rua Santa Maria, 243</h4>
-                  <h4>Butantã - São Paulo/SP</h4>               
-            </div>
-            </div> 
-
-           <div class="corpo-right">
-            <div class="formulariocont">
-              <div id="titulo">
-              <h2>FALE CONOSCO </h2>
-              </div>
-                <form action=”./formulario-contato” method=”post”>
-                    <div>
-                        <label for="nome" id="formnome">Nome</label>
-                        <input type="texto" id="nomecont" name="nome_usuario" placeholder="Seu nome" required maxlength="25" minlength="2">
+          </div>
+      
+              
+              
+                <form class="formulario flex-column" action=”./formulario-contato” method=”post”>
+              <h3>FALE CONOSCO </h3>
+                  <div>
+                        <label for="nome" >Nome</label>
+                        <input class="inputForm" type="texto" oninput="valideInputs()" id="nome" name="nome_usuario" placeholder="Seu nome" required maxlength="25" minlength="2">
+                        <span class="checkInputMsg"></span>
                     </div>
                     <div>
-                        <label for="email" id="emailform">E-mail</label>
-                        <input type="email" id="emailcont" name="email_usuario" required maxlength="30" placeholder="Seu e-mail">
+                        <label for="email"  >E-mail</label>
+                        <input class="inputForm" type="email" id="email" name="email_usuario" required maxlength="30" placeholder="Seu e-mail" oninput="valideInputs()" >
+                        <span class="checkEmailMsg"></span>
                     </div>
                     <div>
-                        <label for="texto" id="formtexto">Mensagem</label>
-                        <textarea id="textocont" name="texto_usuario" required maxlength="100" placeholder="Digite aqui uma mensagem"></textarea>
+                        <label for="msg" >Mensagem</label>
+                        <textarea class="inputForm" id="msg" rows="10" name="texto_usuario"required minlength="2" maxlength="150" placeholder="Digite aqui uma mensagem" oninput="valideInputs()"></textarea>
+                        <span class="checkEmailMsg"></span>
                     </div>
-                    <div>
-                        <button id="buttonpage" class="btn sent" id="btnSend" type="submit">Enviar</button>
-                    </div>
+                  <button class="btn sent" id="btnSend" type="submit">Enviar</button>
                   </form>
-            </div>
-        <div class="icssonsitecontato">
-          <a href="https://www.instagram.com/"><img id="instagramcontato" src="./assets/img/icon-contato/Instagram.png" ></a>
-          <a href="https://pt-br.facebook.com/"><img id="facebookcontato" src="./assets/img/icon-contato/Facebook.png" ></a>
-          <a href="https://web.whatsapp.com/"><img id="whatsappcontato" src="./assets/img/icon-contato/WhatsApp.png"></a>
-        </div>
+            
       </div>
-        </div> 
     </main>
 
 
-   <footer>
+<footer>
   <div class="container flex-row">
     <div class="contato flex-column">
       <span id="endereco">Rua Santa Maria, 243</span>

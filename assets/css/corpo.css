@@ -55,64 +55,55 @@
 
 /* ============= Home ================= */
 
-/* Texto central home */
-header {
-  position: absolute;
-  top: 0;
-  width: -webkit-fill-available;
-}
-
+/* ------Alinhamento dos itens contidos  em Main --------------- */
 main {
   text-align: center;
-
 }
-
+/* ---------Atribuições para primeiro bloco de texto ----------- */
 .containerHome1 {
-  flex-direction: row;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   line-height: 110%;
-  font-size: 20px;
+  font-size: 1.7em;
   color: #000;
   text-align: center;
-  /* ================================================================ */
 }
-
+/* --------Texto nos botões centrais------------ */
 main > .buttonHome {
   text-decoration: none;
   color: #fff;
 }
-
+/* ------------Atriuições para os itens centrais------------ */
 .textHome {
   flex-direction: column;
   justify-content: center;
   color: black;
   height: 100%;
   width: 100%;
+  margin: 30px 0;
 }
-
+/* -------------Títuilo textos centrais---------------- */
 .titleHome {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   line-height: 90%;
-  font-size: 60px;
+  font-size: 2.5em;
   font-weight: bold;
-  margin-top: 150px;
   font-family: 'Holtwood One SC', serif;
+  transition: 1s;
 }
-
+/* -----------Texto entre os botões centrais e seu título------- */
 .subHome {
   padding-top: 10px;
   padding-bottom: 30px;
 }
 /* ==================================================================== */
-.containerHome1 .iconHome { 
+.containerHome1 .iconHome {
   width: 30px;
   height: 30px;
 }
-/* ==================================================================== */
+/* ---------------Referente a estilização do botão-------------- */
 .containerHome1 a {
   height: 60%;
   width: 60%;
@@ -122,14 +113,38 @@ main > .buttonHome {
   padding: 10px;
 }
 
-/* Carousel - CSS */
+.bannerFixo {
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  display: none;
+  background: url(../img/produtos/img-banner/3-hamburguer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+}
+.bannerFixo > p,
+span {
+  position: relative;
+  top: 20px;
+}
+.bannerFixo > p {
+  font-weight: bold;
+}
+/* Carrossel - CSS */
+
+/* Ajustando tamanho do carrossel e limitando o espaço da imagem em relação ao tamanho do container carrossel. */
 
 .slider {
   margin: 0 auto;
-  width: 100%;
+  width: 800px;
   height: 400px;
   overflow: hidden;
 }
+
+/* Ajustando tamanho dos slides do carrossel */
 
 .slides {
   width: 400%;
@@ -137,38 +152,43 @@ main > .buttonHome {
   display: flex;
 }
 
+/* Escondendo os inputs */
+
 .slides input {
   display: none;
 }
 
+/* Posição de cada slide */
+
 .slide {
   width: 25%;
   position: relative;
-  display: flex;
-    align-items: center;
-    justify-content: center;
-    /* =============================================================== */
+  transition: 2s;
 }
 
+/* Ajustando tamanho da imagem dentro do container carrossel */
+
 .slide img {
-  width: 800px;
+  width: 100%;
 }
+
+/* Posições dos botões do carrossel */
 
 .manual-nav {
   position: relative;
-  width: 1150px;
-  /* ================================================= */
   margin-top: -25px;
   display: flex;
   justify-content: center;
 }
+
+/* Estilização dos botões do carrossel */
 
 .manual-btn {
   border: 1px solid #fff;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 /* Margem para todos os botoes, menos o ultimo */
@@ -176,9 +196,13 @@ main > .buttonHome {
   margin-right: 40px;
 }
 
+/* Estilização dos botões do carrossel quando o mouse passa por cima */
+
 .manual-btn:hover {
   background-color: #fff;
 }
+
+/* Dinamismo com CSS - Quando o input estiver selecionado irá mover a imagem X % de posição p/ esquerda  */
 
 #radio1:checked ~ .first {
   margin-left: 0;
@@ -192,32 +216,28 @@ main > .buttonHome {
   margin-left: -50%;
 }
 
-#radio1:checked ~ .auto-nav .auto-btn1 {
-  background-color: #fff;
-}
-
-/* Título imagens interior */
+/*----------- Título imagens interior-------------- */
 .containerHome2 {
   text-align: center;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 1.25em;
   font-family: 'Prociono', serif;
   padding-top: 10%;
   color: #000;
 }
-
+/* ----------Primeira linha texto interior------- */
 .fraseHome1 {
   font-size: 25px;
 }
-
+/* ----------Segunda linha texto interior------- */
 .fraseHome2 {
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 100%;
   letter-spacing: 2px;
   font-size: 60px;
 }
-
+/* -------------Imagens interior------------ */
 .imgintHome {
   flex-direction: row;
   align-items: center;
@@ -226,7 +246,7 @@ main > .buttonHome {
   margin-bottom: 160px;
   margin-top: 80px;
 }
-
+/* ----------------Tamanho imagens------------- */
 .imgintHome img {
   width: 90%;
   height: 90%;
@@ -270,21 +290,148 @@ main > .buttonHome {
   font-weight: bold;
 }
 
+/* =============INICIO CORPO CONTATO============= */
+/* Cofigurações da página contato */
+.localcontato {
+  display: flex;
+  color: #600a0a;
+  flex-direction: column;
+  align-items: center;
+}
+.localcontato > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.localcontato > div > h3 + span {
+  font-size: 1em;
+}
+#imgMapa {
+  width: 30vw;
+  align-items: center;
+}
+.formulario {
+  box-shadow: 0px 2px 2px 1px rgb(134 122 122 / 70%);
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 40vw;
+  padding: 20px 0;
+  background-color: #e5e0d4;
+  color: #600a0a;
+}
+
+.formulario > div {
+  padding: 10px 5px;
+  width: 100%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+.formulario > div > input,
+textarea {
+  padding: 5px;
+}
+
+.inputForm {
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+}
+
+.inputError {
+  border: rgb(150, 3, 3) solid 1px;
+  box-shadow: 0px 0px 3px 2px rgba(68, 2, 2, 0.445);
+}
+.inputSucess {
+  border: green solid 1px;
+  box-shadow: 0px 0px 3px 2px rgba(2, 68, 22, 0.445);
+}
+#msg {
+  height: 60px;
+}
+#buttonpage {
+  display: flex;
+  background-color: #600a0a;
+  color: white;
+  margin-top: 5px;
+}
+
+.corpo.contatoPage {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.contatoAddress {
+  align-items: center;
+  margin: 20px 0;
+}
+.iconContatoAddress {
+  width: 4vw;
+}
+
 /* =============INICIO MEDIAS CORPO============= */
 @media (max-width: 992px) {
+  .containerHome1 {
+    flex-direction: column;
+    font-size: 2em;
+  }
   .card {
     font-size: 0.8em;
   }
 }
 @media (max-width: 768px) {
+  .bannerFixo {
+    display: block;
+    height: 50vw;
+  }
+  .slider {
+    display: none;
+  }
+  .banner {
+    height: 70vw;
+  }
+  .containerHome1 {
+    flex-direction: column;
+    font-size: 2em;
+  }
   .card {
     font-size: 0.6em;
   }
   .employeesList {
     font-size: 1.3em;
   }
+  .iconContatoAddress {
+    width: 10vw;
+  }
+  .formulario {
+    width: 60vw;
+  }
+  #imgMapa {
+    width: 60vw;
+  }
 }
 @media (max-width: 576px) {
+  .bannerFixo {
+    display: block;
+    font-size: 0.8em;
+  }
+  .slider {
+    display: none;
+  }
+  .banner {
+    height: 80vw;
+  }
+
+  .containerHome1 {
+    flex-direction: column;
+    font-size: 1em;
+  }
   .card {
     font-size: 0.8em;
     width: 100%;
@@ -300,193 +447,17 @@ main > .buttonHome {
   .paragrafos > p {
     font-size: 1em;
   }
+  .formulario,
+  #imgMapa {
+    width: 80vw !important;
+  }
+  .iconContatoAddress {
+    width: 10vw;
+  }
 }
 
-/* =============FIM CORPO CARDÁPIO============= */
-/* =============INICIO CORPO CONTATO============= */
-
-/* Cofigurações da página contato */
-/* Cofigurações da pagina contato */
-.corpo-left,
-.corpo-right {
-  display: flex;
-  justify-content: center;
+@media (min-width: 992px) {
+  .formulario {
+    height: 30vw;
+  }
 }
-.corpo-left {
-  margin-top: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 50%;
-}
-.corpo-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-}
-
-#horariocontato, #telefonecontato{
-  color:#600A0A;
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-  width: 20em;
-  width: 20em;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-} 
-.contatopage{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.localcontatopage{
-  display: flex;
-  color:#600A0A;
-  flex-direction: column;
-  align-items: center;
- 
-}
-#imgMapa{ 
-  height: 25em;
-  align-items: center;
-}
-.formulariocont{
-  box-shadow:0px 10px 20px 0px rgba(134, 122, 122, 0.7) ;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  width: 400px;
-  height: 400px;
-  background-color: #E5E0D4; 
-  color: #600A0A;
-}
-#titulo{
-  display: flex;
-
-}
-#nomecont, #emailcont, #textocont{
-  color:rgb(115, 24, 24);
-  border: 2px solid;
-  flex-direction: column; 
-  border-color: #E5E0D4;
-  background-color: #B7B3A1;
-  border-radius: 5px;
-  width: 300px;
-  height: 35px;
-  display: flex;
-}
-#formnome, #emailform, #formtexto{
-  display: flex;
-
-}
-form input[type=texto],
-form input[type=email]
-{
-  padding-left: 10px;
-}
-form label[type=texto]{
-  padding-left: 10px;
-}
-textarea{
-  padding-left: 10px;
-  padding-top: 5px;
-
-}
-
-#buttonpage{
-  display: flex;
-  background-color: #600A0A;
-  color: white;
-  margin-top: 5px; 
-
-}
-.icssonsitecontato{
-  display: flex;
-  align-items: flex-end; 
-  justify-content: space-evenly;
-  align-items: center;
-  width: 400px;
-  height: 100px;
-}
-
-#instagramcontato{
-  height: 40px;
-}
-#facebookcontato{
-  height: 40px;
-}
-#whatsappcontato{
-  height: 40px;
-} 
-
-.localcontato {
-  display: flex;
-  color: #600a0a;
-  flex-direction: column;
-  align-items: center;
-}
-#imgMapa {
-  height: 25em;
-  align-items: center;
-}
-.formulario {
-  box-shadow: 0px 10px 20px 0px rgba(134, 122, 122, 0.7);
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  width: 400px;
-  height: 400px;
-  background-color: #e5e0d4;
-  color: #600a0a;
-}
-#titulo {
-  display: flex;
-  color: #600a0a;
-}
-#nome,
-#email,
-#texto {
-  border-color: #e5e0d4;
-  background-color: #b7b3a1;
-  border-radius: 5px;
-  width: 300px;
-  height: 35px;
-  display: flex;
-  flex-direction: column;
-}
-button {
-  display: flex;
-  background-color: #600a0a;
-  color: white;
-  margin-top: 5px;
-}
-
-.icssonsite {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 400px;
-  height: 100px;
-}
-
-.adress {
-  display: flex;
-  background-color: #600a0a;
-  color: rgb(251, 251, 251);
-  margin-top: 20px;
-  width: 100%;
-  height: 4em;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-/* =============INICIO CORPO CONTATO============= */

@@ -62,7 +62,12 @@
     <body>
     <main>
 
-      <div class="corpo container">
+      <div class="corpo container banner">
+        <div class="bannerFixo">
+          <p>O Hamburguer mais gostoso do Brasil</p>
+          <span>Peça o seu pelo nosso delivery!</span>
+          <!-- <img src="./assets/img/produtos/img-banner/3-hamburguer.jpg" alt=""> -->
+        </div>
         <!-- Carousel - Home-->
         <div class="slider">
           <div class="slides">
@@ -83,13 +88,6 @@
               <img src="./assets/img/produtos/img-banner/6-hamburguer.jpg" alt="Imagem hamburguer">
             </div>
             <!-- Fim Slide Images -->
-
-            <!-- Auto Navigation -->
-            <div class="auto-nav">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-            </div>
           </div>
           <!-- Manual Navigation -->
           <div class="manual-nav">
@@ -99,18 +97,21 @@
           </div>
         </div>
       </div>  
-      <div class="containerHome1">
+      <div class="containerHome1 flex-row">
+        <!-- -----------Texto e botão para Sobre---------------- -->
         <div class="textHome">
           <p class="titleHome"><img class="iconHome" src="./assets/img/home/icon-texto-central/GrowIcon.png" alt="grow icon">Nossa <br> história</p>
           <p class="subHome">Quer saber mais sobre como <br> surgiu a Austburguer?</p>
           <a class="buttonHome" href="./sobre.html" class="botao">Clique aqui</a>
         </div>
+        <!-- --------Texto e botão parra Cardápio--------------- -->
         <div class="textHome">
           <p class="titleHome"><img class="iconHome" src="./assets/img/home/icon-texto-central/MenuIcon.png" alt="cardapio icon">Nosso <br> cardápio</p>
           <p class="subHome">Os melhores burguers do Brasil, <br> qual vai ser a boa de hoje?</p>
           <a class="buttonHome" href="./cardapio.html" clas="botao">Clique aqui</a>
         </div>
       </div>  
+      <!-- -------Abriga a organização do interior do espaço na Home--------- -->
       <div class="containerHome2">
         <div class="interior">
           <div class="textint">
@@ -126,6 +127,7 @@
       </div>
     </main>
 <footer>
+  <!-- ----------------Conteúdo rodapé----------------- -->
   <div class="container flex-row">
     <div class="contato flex-column">
       <span id="endereco">Rua Santa Maria, 243</span>
@@ -140,7 +142,6 @@
           <li id="whatsapp"></li>
           <li id="instagram"></li>
           <li id="facebook"></li>
-        
       </ul>
     </div>
   </div>
@@ -148,5 +149,7 @@
 
     <!-- Global JS -->
     <script src="./assets/js/global.js"></script>
+    <!-- Carrossel JS -->
+    <script src="./assets/js/carrossel.js"></script>
   </body>
 </html>
