@@ -9,7 +9,7 @@ $(document).ready(async () => {
   
   for (let prod of productList) {
 
-    //toFixed for price
+    //toFixed for price - two decimal places
     prod.preco = prod.preco.toFixed(2);
 
     // Template of Card-product ready
