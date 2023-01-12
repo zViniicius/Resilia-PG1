@@ -70,19 +70,19 @@
 
       <div class="corpo flex-row">
         <div class="corpo-left">
-          <div class="contato">
-            <span id="horario"> 
+          <div class="contatopage">
+            <span id="horariocontato"> 
               <img id="imgHorario" src="./assets/img/icon-contato/Group.png" width="40px">
               <h4> TERÇA - DOMINGO: 11H ÀS 22H </h4>   
              </span> 
-             <span id="telefone">
+             <span id="telefonecontato">
               <img src="./assets/img/icon-contato/Vector.png" width="40px">
                 <h4>(11)96700-8890</h4>
-                <h4>(11)94002-8922</h4>
+                <h4>(11)99999-9999</h4>
              </span>
             </div>
 
-            <div class="localcontato">
+            <div class="localcontatopage">
               <img id="imgMapa" src="./assets/img/icon-contato/Mapsicle Map.png">
                   <h4>Rua Santa Maria, 243</h4>
                   <h4>Butantã - São Paulo/SP</h4>               
@@ -90,32 +90,32 @@
             </div> 
 
            <div class="corpo-right">
-            <div class="formulario">
+            <div class="formulariocont">
               <div id="titulo">
               <h2>FALE CONOSCO </h2>
               </div>
                 <form action=”./formulario-contato” method=”post”>
                     <div>
-                        <label for="nome">Nome</label>
-                        <input type="texto" id="nome" name="nome_usuario">
+                        <label for="nome" id="formnome">Nome</label>
+                        <input type="texto" id="nomecont" name="nome_usuario" placeholder="Seu nome" required maxlength="25" minlength="2">
                     </div>
                     <div>
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email_usuario">
+                        <label for="email" id="emailform">E-mail</label>
+                        <input type="email" id="emailcont" name="email_usuario" required maxlength="30" placeholder="Seu e-mail">
                     </div>
                     <div>
-                        <label for="texto">Mensagem</label>
-                        <textarea id="texto" name="texto_usuario"></textarea>
+                        <label for="texto" id="formtexto">Mensagem</label>
+                        <textarea id="textocont" name="texto_usuario" required maxlength="100" placeholder="Digite aqui uma mensagem"></textarea>
                     </div>
                     <div>
-                        <button class="btn sent" id="btnSend" type="submit">Enviar</button>
+                        <button id="buttonpage" class="btn sent" id="btnSend" type="submit">Enviar</button>
                     </div>
                   </form>
             </div>
-        <div class="icssonsite">
-          <img id="instagram" src="./assets/img/icon-contato/Instagram.png" >
-          <img id="facebook" src="./assets/img/icon-contato/Facebook.png" >
-          <img id="whatsapp" src="./assets/img/icon-contato/WhatsApp.png">
+        <div class="icssonsitecontato">
+          <a href="https://www.instagram.com/"><img id="instagramcontato" src="./assets/img/icon-contato/Instagram.png" ></a>
+          <a href="https://pt-br.facebook.com/"><img id="facebookcontato" src="./assets/img/icon-contato/Facebook.png" ></a>
+          <a href="https://web.whatsapp.com/"><img id="whatsappcontato" src="./assets/img/icon-contato/WhatsApp.png"></a>
         </div>
       </div>
         </div> 
@@ -134,9 +134,9 @@
     </div>
     <div class="networks">
       <ul class="networkList flex-row">
-          <li id="whatsapp"></li>
-          <li id="instagram"></li>
-          <li id="facebook"></li>
+          <li id="whatsappcontato"></li>
+          <li id="instagramcontato"></li>
+          <li id="facebookcontato"></li>
         
       </ul>
     </div>

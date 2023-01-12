@@ -323,9 +323,8 @@ main > .buttonHome {
   align-items: center;
   width: 50%;
 }
-/* !!!!!!!!!!!!CÓDIGO EM CONFLITO!!!!!!!!!!!! */
 
-/* #horario, #telefone{
+#horariocontato, #telefonecontato{
   color:#600A0A;
   align-items: center;
   flex-direction: column;
@@ -335,23 +334,94 @@ main > .buttonHome {
   margin-top: 10px;
   margin-bottom: 10px;
 
-} */
-/* .contato{
+} 
+.contatopage{
   display: flex;
   flex-direction: column;
   align-items: center;
-} */
-/* #instagram{
-  height: 40px;
 }
-#facebook{
-  height: 40px;
+.localcontatopage{
+  display: flex;
+  color:#600A0A;
+  flex-direction: column;
+  align-items: center;
+ 
 }
-#whatsapp{
-  height: 40px;
-} */
+#imgMapa{ 
+  height: 25em;
+  align-items: center;
+}
+.formulariocont{
+  box-shadow:0px 10px 20px 0px rgba(134, 122, 122, 0.7) ;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  background-color: #E5E0D4; 
+  color: #600A0A;
+}
+#titulo{
+  display: flex;
 
-/* !!!!!!!!!!!!CÓDIGO EM CONFLITO!!!!!!!!!!!! */
+}
+#nomecont, #emailcont, #textocont{
+  color:rgb(115, 24, 24);
+  border: 2px solid;
+  flex-direction: column; 
+  border-color: #E5E0D4;
+  background-color: #B7B3A1;
+  border-radius: 5px;
+  width: 300px;
+  height: 35px;
+  display: flex;
+}
+#formnome, #emailform, #formtexto{
+  display: flex;
+
+}
+form input[type=texto],
+form input[type=email]
+{
+  padding-left: 10px;
+}
+form label[type=texto]{
+  padding-left: 10px;
+}
+textarea{
+  padding-left: 10px;
+  padding-top: 5px;
+
+}
+
+#buttonpage{
+  display: flex;
+  background-color: #600A0A;
+  color: white;
+  margin-top: 5px; 
+
+}
+.icssonsitecontato{
+  display: flex;
+  align-items: flex-end; 
+  justify-content: space-evenly;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+}
+
+#instagramcontato{
+  height: 40px;
+}
+#facebookcontato{
+  height: 40px;
+}
+#whatsappcontato{
+  height: 40px;
+} 
+
 .localcontato {
   display: flex;
   color: #600a0a;
