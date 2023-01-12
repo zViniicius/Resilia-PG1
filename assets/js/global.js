@@ -27,7 +27,7 @@ $('#btnNav').on('click', () => {
   btnNav.toggleClass('open'); //Add .open class to navBar // Adicione a classe .open no elemento NavBar
 
   // Animations LogoHeader
-  $('.navLinks').toggleClass('mobile'); //Add .mobile class to navBar // Adicione a classe .mobile no elemento NavBar
+  $('.navLinks').toggleClass('mobile'); //Add .mobile class to navBar // Adicione a classe .mobile no elemento NavBar Coluna/Linha
   $('#logoHeader').animate({ top: navBH == '80' ? '0' : '25px' }); // Animation to move logo e Navbar // Animação para mover o logo e a NavBar
   $('#logoHeader').animate({ width: navBH == '80' ? '5em' : '7em' }); // Animation to move logo e Navbar // Animação para mover o logo e a NavBar
   $('main').animate({ marginTop: navBH == '80' ? '80px' : '0' }, 1000);
@@ -89,7 +89,7 @@ $('.backdrop').on('click', () => {
 // }
 
 function valideInputs() {
-  const regexEmail = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/;
+  const regexEmail = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/; // Regex para validar email
   let inputName = document.querySelector('#nome').value.trim();
   let inputEmail = document.querySelector('#email').value;
   let inputMsg = document.querySelector('#msg').value.trim();
@@ -106,19 +106,19 @@ function valideInputs() {
       if (inputMsg.length > 2) {
         estilizar('sucess', '#msg'); // Estiliza o input com verde
       } else {
-        estilizar('error', '#msg', 'Mensagem invalida'); // Estiliza o input com vermelho
+        estilizar('error', '#msg', 'Mensagem invalida'); // Estiliza o input mensagem com vermelho
       }
     } else {
-      estilizar('error', '#email', 'E-mail invalido'); //Estiliza o input com vermelho
+      estilizar('error', '#email', 'E-mail invalido'); //Estiliza o input email com vermelho
     }
   } else {
-    estilizar('error', '#nome', 'Nome Inválido'); //Estiliza o input com vermelho
+    estilizar('error', '#nome', 'Nome Inválido'); //Estiliza o input nome com vermelho
   }
 }
 
-function estilizar(state = error, el, msg) {
-  Input = document.querySelector(el); // Pega o elemento passado anteriormente
-  msgVerificacao = document.querySelector(el).nextElementSibling; // Seleciona o proximo elemento mais proximo
+function estilizar(state = error, input, msg) {
+  Input = document.querySelector(input); // Pega o elemento passado anteriormente
+  msgVerificacao = document.querySelector(input).nextElementSibling; // Seleciona o proximo elemento mais proximo
 
   //se o state == error, estiliza o input com vermelho
   if (state == 'error') {
@@ -128,7 +128,7 @@ function estilizar(state = error, el, msg) {
     msgVerificacao.classList.add('error-i');
     msgVerificacao.innerHTML = msg;
 
-    //se o state == error, estiliza o input com verde
+    //se o state == sucess, estiliza o input com verde
   } else if (state == 'sucess') {
     Input.classList.remove('inputError');
     Input.classList.add('inputSucess');
