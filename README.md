@@ -4,9 +4,11 @@
 
 Este é um projeto em grupo realizado pelo squad Wolf do curso da Resilia de Webdev RD. O objetivo é um site comercial criado para um microempreendedor, ajudando na divulgação do seu negócio.
 
-<p>## :wrench:  Como executar:
+## :wrench:  Como executar:
 Aqui você encontra nosso site e suas funcionalidades:
-:link:  zviniicius.github.io/Resilia-PG1/ </p>
+:link:  zviniicius.github.io/Resilia-PG1/ 
+
+
 Nosso site:
 :link:  https://github.com/zViniicius/Resilia-PG1/wiki/Di%C3%A1rio-de-Bordo
 
