@@ -42,41 +42,62 @@
     "preco": 35.99
   },
   "07": {
+    "produto": "AustVegan 1",
+    "categoria": "Burger",
+    "descricao": "Hambúrguer de abobrinha artesanal 100g, cebola roxa, alface, tomate e pão artesanal da casa.",
+    "img": "./assets/img/produtos/img-cardapio/austVegan.png",
+    "preco": 42.89
+  },
+  "08": {
+    "produto": "AustVegan 2",
+    "categoria": "Burger",
+    "descricao": "Hambúrguer de beringela artesanal 90g, cebola roxa, alface, tomate e pão artesanal da casa.",
+    "img": "./assets/img/produtos/img-cardapio/austVegan2.png",
+    "preco": 32.99
+  },
+  "09": {
+    "produto": "AustVegan 3",
+    "categoria": "Burger",
+    "descricao": "Hambúrguer de batata-doce artesanal 90g, cebola roxa, alface, tomate e pão artesanal da casa.",
+    "img": "./assets/img/produtos/img-cardapio/austVegan3.png",
+    "preco": 35.99
+  },
+  "10": {
     "produto": "Batata + Bebida",
     "categoria": "Acompanhamento",
     "descricao": "Acompanha 100g de batata frita e um refri geladinho.",
     "img": "./assets/img/produtos/img-cardapio/combo_fritas.png",
     "preco": 14.89
   },
-  "08": {
+  "11": {
     "produto": "Batata Média",
     "categoria": "Acompanhamento",
     "descricao": "Acompanha 150g de batata frita.",
     "img": "./assets/img/produtos/img-cardapio/fritas_M.png",
     "preco": 8.89
   },
-  "09": {
+  "12": {
     "produto": "Batata Cheddar e Bacon",
     "categoria": "Acompanhamento",
     "descricao": "Deliciosas batatas fritas cobertas com queijo cheddar e bacon.",
     "img": "./assets/img/produtos/img-cardapio/fritas_G.png",
     "preco": 19.89
   },
-  "10": {
+  "13": {
     "produto": "Suco de Frutas Natural",
     "categoria": "Bebida",
     "descricao": "Temos suco de laranja, abacaxi com hortelã, manga e maracujá.",
     "img": "./assets/img/produtos/img-cardapio/suco.png",
     "preco": 7.89
   },
-  "11": {
+  "14": {
     "produto": "Refrigerantes",
     "categoria": "Bebida",
     "descricao": "Temos Coca-Cola, Guaraná, Fanta Laranja e Fanta Uva.",
     "img": "./assets/img/produtos/img-cardapio/refri.png",
     "preco": 9.89
   },
-  "12": {
+  "15": {
     "produto": "Água",
     "categoria": "Bebida",
     "descricao": "500ml.",
