@@ -343,12 +343,11 @@ main > .buttonHome {
 }
 
 .formulario > div {
-  padding: 10px 5px;
   width: 100%;
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  padding: 10px 20px;
+  padding: 10px 40px;
 }
 .formulario > div > input,
 textarea {
